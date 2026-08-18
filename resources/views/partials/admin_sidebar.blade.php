@@ -1,7 +1,7 @@
 <aside class="sidebar">
   <div class="sidebar-logo">
-    <img src="{{ asset('images/hexafume/hexafume-white.png') }}" alt="Hexafume" class="sidebar-logo-img sidebar-logo-img--white">
-    <img src="{{ asset('images/hexafume/hexafume-original.png') }}" alt="Hexafume" class="sidebar-logo-img sidebar-logo-img--original">
+    <img src="{{ asset('images/hexafume/hexafume-white.png') }}" alt="Malfaur" class="sidebar-logo-img sidebar-logo-img--white">
+    <img src="{{ asset('images/hexafume/hexafume-original.png') }}" alt="Malfaur" class="sidebar-logo-img sidebar-logo-img--original">
     <span class="logo-badge">Admin</span>
   </div>
 

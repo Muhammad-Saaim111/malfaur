@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'About Us — Hexafume | Who We Are')
-@section('meta_description', 'Learn about Hexafume — our story, mission, values, and the team driving digital transformation across AI, SaaS, and custom software development since 2022.')
+@section('title', 'About Us — Malfaur | Who We Are')
+@section('meta_description', 'Learn about Malfaur — our story, mission, values, and the team driving digital transformation across AI, SaaS, and custom software development since 2022.')
 
 @push('page_styles')
     <link rel="stylesheet" href="{{ asset('css/about.css') }}">
@@ -15,7 +15,7 @@
       <div class="preloader-ring-progress" id="ringProgress"></div>
     </div>
     <div class="preloader-logo-center">
-      <img src="{{ asset('images/hexafume/hexafume-white.png') }}" id="preloader-img" alt="Hexafume" width="240" height="80"
+      <img src="{{ asset('images/hexafume/hexafume-white.png') }}" id="preloader-img" alt="Malfaur" width="240" height="80"
         style="width:240px;height:80px;max-width:240px;max-height:80px;object-fit:contain;display:block;filter:brightness(1.1);"
         onerror="this.style.display='none';document.getElementById('preloader-fallback').style.display='block'"/>
       <div class="preloader-logo" id="preloader-fallback" style="display:none;">HEXA<span>FUME</span></div>
@@ -44,7 +44,7 @@
       </nav>
       <div class="section-badge" style="animation:fadeUp .7s .15s ease both;"><span class="dot"></span>{{ $hero['badge'] ?? 'Who We Are' }}</div>
       <h1>{!! $hero['title'] ?? 'We Build <span class="grad">Digital Futures</span> That Matter' !!}</h1>
-      <p class="hero-sub">{{ $hero['subtitle'] ?? 'Hexafume is a next-generation digital agency pioneered by excellence and innovation.' }}</p>
+      <p class="hero-sub">{{ $hero['subtitle'] ?? 'Malfaur is a next-generation digital agency pioneered by excellence and innovation.' }}</p>
       <div class="hero-btns">
         <a href="{{ route('services') }}" class="btn-p">{{ $hero['btn1_text'] ?? 'Explore Services' }} <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <a href="{{ route('contact') }}" class="btn-s">{{ $hero['btn2_text'] ?? 'Start a Project' }}</a>
@@ -68,7 +68,7 @@
   <div class="story-text reveal">
     <div class="section-badge"><span class="dot"></span>{{ $story['badge'] ?? 'Our Story' }}</div>
     <h2 class="section-title">{!! $story['title'] ?? 'From a Bold <span class="grad">Vision</span> to Global Impact' !!}</h2>
-    <p>{{ $story['p1'] ?? "Hexafume was born out of frustration. We saw businesses with brilliant ideas trapped by outdated technology, slow agencies, and digital strategies that just didn't work." }}</p>
+    <p>{{ $story['p1'] ?? "Malfaur was born out of frustration. We saw businesses with brilliant ideas trapped by outdated technology, slow agencies, and digital strategies that just didn't work." }}</p>
     <p>{!! $story['p2'] ?? 'Founded in 2022, we set out to build a company that <strong>thinks like a startup, executes like an enterprise, and cares like a partner</strong>.' !!}</p>
     <div style="margin-top:2rem;">
       <a href="{{ route('team') }}" class="btn-p">{{ $story['btn_text'] ?? 'Meet the Team' }} <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -122,7 +122,7 @@
 <!-- PILLARS -->
 <section class="pillars-section">
   <div class="pillars-head reveal">
-    <div class="section-badge"><span class="dot"></span>{{ $pillars['badge'] ?? 'Why Hexafume' }}</div>
+    <div class="section-badge"><span class="dot"></span>{{ $pillars['badge'] ?? 'Why Malfaur' }}</div>
     <h2 class="section-title">{!! $pillars['title'] ?? 'What Makes Us <span class="grad">Different</span>' !!}</h2>
     <p>{{ $pillars['desc'] ?? 'The six pillars that define how we work and why clients keep coming back.' }}</p>
   </div>
@@ -229,7 +229,7 @@
           </div>
         @else
           <div style="color:#ffc107;font-size:.85rem;letter-spacing:3px;margin-bottom:.8rem;">★★★★★</div>
-          <p style="font-size:.85rem;line-height:1.75;color:var(--w60);font-style:italic;margin-bottom:1rem;">"Hexafume understood our vision perfectly. They delivered a beautifully designed platform that exceeded every expectation."</p>
+          <p style="font-size:.85rem;line-height:1.75;color:var(--w60);font-style:italic;margin-bottom:1rem;">"Malfaur understood our vision perfectly. They delivered a beautifully designed platform that exceeded every expectation."</p>
           <div style="display:flex;align-items:center;gap:.75rem;">
             <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue-b));display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;">AP</div>
             <div><div style="font-size:.82rem;font-weight:700;">Arete Properties</div><div style="font-size:.7rem;color:var(--w60);">Real Estate</div></div>

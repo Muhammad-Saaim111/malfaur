@@ -277,7 +277,7 @@
     <div class="body">
 
         <p class="intro">
-            A new inquiry has been submitted through the Hexafume website contact form.
+            A new inquiry has been submitted through the Malfaur website contact form.
             Please review the details below and respond to the prospective client within 24&nbsp;hours.
         </p>
 
@@ -324,7 +324,7 @@
 
         {{-- ── CTA ── --}}
         <div class="cta-wrap">
-            <a href="mailto:{{ $senderEmail }}?subject=Re: Your Inquiry About {{ rawurlencode($service) }}&body=Hi {{ rawurlencode($senderName) }},%0A%0AThank you for reaching out to Hexafume!%0A%0A" class="cta-btn">
+            <a href="mailto:{{ $senderEmail }}?subject=Re: Your Inquiry About {{ rawurlencode($service) }}&body=Hi {{ rawurlencode($senderName) }},%0A%0AThank you for reaching out to Malfaur!%0A%0A" class="cta-btn">
                 &#9993;&nbsp; Reply to {{ $senderName }}
             </a>
         </div>
@@ -343,11 +343,11 @@
         <div class="footer-brand">HEXA<span>FUME</span></div>
         <p>
             DHA 1, Islamabad, Pakistan &bull;
-            <a href="mailto:info@hexafume.com">info@hexafume.com</a> &bull;
+            <a href="mailto:info@malfaur.com">info@malfaur.com</a> &bull;
             <a href="tel:+923449121053">+92 344 9121053</a>
         </p>
         <p style="margin-top:10px;">
-            &copy; {{ date('Y') }} Hexafume. This is an automated notification &mdash; do not reply to this email.
+            &copy; {{ date('Y') }} Malfaur. This is an automated notification &mdash; do not reply to this email.
         </p>
     </div>
 

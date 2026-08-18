@@ -32,7 +32,7 @@
       <div class="form-group">
         <label for="email">Email Address</label>
         <div class="input-wrap">
-          <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="admin@hexafume.com" autocomplete="email" required/>
+          <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="admin@malfaur.com" autocomplete="email" required/>
           <span class="input-icon">
             <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </span>

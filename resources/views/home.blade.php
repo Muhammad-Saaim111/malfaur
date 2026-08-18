@@ -6,10 +6,10 @@
   {
     "@@context": "https://schema.org",
     "@@type": "ProfessionalService",
-    "name": "Hexafume",
+    "name": "Malfaur",
     "image": "{{ asset('images/hexafume/hexafume-original.png') }}",
-    "@@id": "https://hexafume.com/",
-    "url": "https://hexafume.com/",
+    "@@id": "https://malfaur.com/",
+    "url": "https://malfaur.com/",
     "telephone": "+923449121053",
     "address": {
       "@@type": "PostalAddress",
@@ -35,45 +35,45 @@
       "closes": "18:00"
     },
     "sameAs": [
-      "https://www.instagram.com/hexafume?igsh=MWplZXF2bGkzcG00eA==",
-      "https://www.linkedin.com/company/hexafume"
+      "https://www.instagram.com/malfaur?igsh=MWplZXF2bGkzcG00eA==",
+      "https://www.linkedin.com/company/malfaur"
     ]
   },
   {
     "@@context": "https://schema.org",
     "@@type": "HowTo",
-    "name": "Hexafume Standard Work Process",
+    "name": "Malfaur Standard Work Process",
     "description": "Our proven 5-step methodology for delivering high-performance digital solutions.",
     "step": [
       {
         "@@type": "HowToStep",
         "name": "Choose Your Service",
         "text": "Select from our wide range of IT solutions — web, apps, marketing, design, or AI-powered services.",
-        "url": "https://hexafume.com/#process"
+        "url": "https://malfaur.com/#process"
       },
       {
         "@@type": "HowToStep",
         "name": "Share Your Requirements",
         "text": "Tell us about your goals and business needs so we can craft the right solution for you.",
-        "url": "https://hexafume.com/#process"
+        "url": "https://malfaur.com/#process"
       },
       {
         "@@type": "HowToStep",
         "name": "Consultation & Strategy",
         "text": "We'll set up a meeting to discuss ideas, propose strategies, and align with your vision.",
-        "url": "https://hexafume.com/#process"
+        "url": "https://malfaur.com/#process"
       },
       {
         "@@type": "HowToStep",
         "name": "Development & Delivery",
         "text": "Our expert team designs, develops, and delivers your project with quality and innovation.",
-        "url": "https://hexafume.com/#process"
+        "url": "https://malfaur.com/#process"
       },
       {
         "@@type": "HowToStep",
         "name": "Ongoing Support",
         "text": "We ensure your success with continuous support, updates, and improvements post-launch.",
-        "url": "https://hexafume.com/#process"
+        "url": "https://malfaur.com/#process"
       }
     ]
   }
@@ -89,7 +89,7 @@
       <div class="preloader-ring-progress" id="ringProgress"></div>
     </div>
     <div class="preloader-logo-center">
-      <img src="{{ asset('images/hexafume/hexafume-white.png') }}" id="preloader-img" alt="Hexafume" width="240" height="80"
+      <img src="{{ asset('images/hexafume/hexafume-white.png') }}" id="preloader-img" alt="Malfaur" width="240" height="80"
         style="width:240px;height:80px;max-width:240px;max-height:80px;object-fit:contain;display:block;filter:brightness(1.1);"
         onerror="this.style.display='none';document.getElementById('preloader-fallback').style.display='block'"/>
       <div class="preloader-logo" id="preloader-fallback" style="display:none;">HEXA<span>FUME</span></div>
@@ -144,7 +144,7 @@
       <div class="logo-wrap">
         <div class="logo-glow"></div>
         <canvas id="logoSandCanvas" class="logo-sand-canvas"></canvas>
-        <img src="{{ asset('images/hexafume/hexafume-white.png') }}" alt="Hexafume - Think Big | IT Services & Digital Solutions" class="hero-logo-img" loading="eager" id="heroLogoSource" width="360" height="200" style="width:100%;height:auto;max-width:360px;max-height:120px;object-fit:contain;display:block;">
+        <img src="{{ asset('images/hexafume/hexafume-white.png') }}" alt="Malfaur - Think Big | IT Services & Digital Solutions" class="hero-logo-img" loading="eager" id="heroLogoSource" width="360" height="200" style="width:100%;height:auto;max-width:360px;max-height:120px;object-fit:contain;display:block;">
       </div>
     </div>
     </div>
@@ -164,7 +164,7 @@
     <h2 style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:500;font-size:clamp(2rem,3.5vw,3rem);line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem;">
       {!! $aboutSection['title'] ?? 'Transforming Ideas Into <span class="grad">Digital Reality</span>' !!}
     </h2>
-    <p class="about-text">{{ $aboutSection['desc_p1'] ?? "Hexafume is a software development company helping businesses build scalable digital products. Our team of engineers, designers, and technology experts creates custom software, AI solutions, SaaS platforms, and enterprise applications that solve real business challenges." }}</p>
+    <p class="about-text">{{ $aboutSection['desc_p1'] ?? "Malfaur is a software development company helping businesses build scalable digital products. Our team of engineers, designers, and technology experts creates custom software, AI solutions, SaaS platforms, and enterprise applications that solve real business challenges." }}</p>
     <p class="about-text">{{ $aboutSection['desc_p2'] ?? "" }}</p>
     <div class="about-pillars">
       @if(isset($aboutSection['pillars']))
@@ -401,7 +401,7 @@
           </div>
           <div class="c-item">
             <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-            <div><h4>{{ $contactHeader['email_label'] ?? 'Email Us' }}</h4><a href="mailto:{{ $contactHeader['email'] ?? 'info@hexafume.com' }}">{{ $contactHeader['email'] ?? 'info@hexafume.com' }}</a></div>
+            <div><h4>{{ $contactHeader['email_label'] ?? 'Email Us' }}</h4><a href="mailto:{{ $contactHeader['email'] ?? 'info@malfaur.com' }}">{{ $contactHeader['email'] ?? 'info@malfaur.com' }}</a></div>
           </div>
           <div class="c-item">
             <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
@@ -433,7 +433,7 @@
             </select>
           </div>
           <div class="form-group"><textarea name="message" placeholder="Tell us about your project..." required></textarea></div>
-          <button type="submit" class="form-submit" aria-label="Send Message to Hexafume Team">
+          <button type="submit" class="form-submit" aria-label="Send Message to Malfaur Team">
             Send Message
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
           </button>

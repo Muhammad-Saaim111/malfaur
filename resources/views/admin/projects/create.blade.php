@@ -430,7 +430,7 @@
         <div class="section-body">
           <div class="form-group" style="margin-bottom:1rem;">
             <label>Meta Title</label>
-            <input type="text" id="metaTitle" name="meta_title" placeholder="e.g. Castlly — Project Detail | Hexafume" oninput="updateCharCount(this,'metaTitleCount',60)"/>
+            <input type="text" id="metaTitle" name="meta_title" placeholder="e.g. Castlly — Project Detail | Malfaur" oninput="updateCharCount(this,'metaTitleCount',60)"/>
             <div class="char-counter" id="metaTitleCount">0 / 60</div>
           </div>
           <div class="form-group" style="margin-bottom:1rem;">
@@ -440,11 +440,11 @@
           </div>
           <div class="form-group" style="margin-bottom:1rem;">
             <label>Keywords</label>
-            <input type="text" id="metaKeywords" name="meta_keywords" placeholder="e.g. Castlly, Hexafume Project, Streaming Platform…"/>
+            <input type="text" id="metaKeywords" name="meta_keywords" placeholder="e.g. Castlly, Malfaur Project, Streaming Platform…"/>
           </div>
           <div class="form-group" style="margin-bottom:1rem;">
             <label>Canonical URL</label>
-            <input type="url" id="canonicalUrl" name="canonical_url" placeholder="https://hexafume.com/project/castlly"/>
+            <input type="url" id="canonicalUrl" name="canonical_url" placeholder="https://malfaur.com/project/castlly"/>
           </div>
           <div class="form-row">
             <div class="form-group">
@@ -496,7 +496,7 @@
           <div class="form-group">
             <label>Project URL Slug</label>
             <input type="text" id="urlSlug" name="url_slug" placeholder="castlly"/>
-            <div class="field-hint">hexafume.com/project/<strong id="slugPreview">castlly</strong></div>
+            <div class="field-hint">malfaur.com/project/<strong id="slugPreview">castlly</strong></div>
           </div>
 
           <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border);">
@@ -734,7 +734,7 @@ function addMoreProject(data) {
       </div>
       <div class="form-group">
         <label>Link</label>
-        <input type="url" placeholder="https://tradebox.hexafume.com" value="${data?.link||''}"/>
+        <input type="url" placeholder="https://tradebox.malfaur.com" value="${data?.link||''}"/>
       </div>
     </div>
   `;

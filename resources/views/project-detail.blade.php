@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $project->meta_title ?: $project->name . ' — Project Detail | Hexafume')
-@section('meta_description', $project->meta_description ?: 'Explore the case study and full development timeline for ' . $project->name . ' by Hexafume.')
+@section('title', $project->meta_title ?: $project->name . ' — Project Detail | Malfaur')
+@section('meta_description', $project->meta_description ?: 'Explore the case study and full development timeline for ' . $project->name . ' by Malfaur.')
 @if($project->meta_keywords)
 @section('meta_keywords', $project->meta_keywords)
 @endif

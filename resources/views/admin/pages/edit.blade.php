@@ -458,7 +458,7 @@
             <div class="form-group">
               <label>Slug / URL</label>
               <input type="text" disabled value="{{ $page->slug }}" style="opacity:.6;cursor:not-allowed;"/>
-              <div class="field-hint">hexafume.com/<strong>{{ $page->slug == 'home' ? '' : $page->slug }}</strong></div>
+              <div class="field-hint">malfaur.com/<strong>{{ $page->slug == 'home' ? '' : $page->slug }}</strong></div>
             </div>
           </div>
         </div>

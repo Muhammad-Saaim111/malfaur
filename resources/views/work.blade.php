@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Projects — Hexafume | Our Work & Case Studies')
-@section('meta_description', "Explore Hexafume's portfolio of digital projects — from AI-powered SaaS platforms to streaming services, trading tools, and beyond. Real results for real clients.")
+@section('title', 'Projects — Malfaur | Our Work & Case Studies')
+@section('meta_description', "Explore Malfaur's portfolio of digital projects — from AI-powered SaaS platforms to streaming services, trading tools, and beyond. Real results for real clients.")
 
 @push('page_styles')
     <link rel="stylesheet" href="{{ asset('css/work.css') }}">
@@ -14,7 +14,7 @@
       <div class="preloader-ring-progress" id="ringProgress"></div>
     </div>
     <div class="preloader-logo-center">
-      <img src="{{ asset('images/hexafume/hexafume-white.png') }}" id="preloader-img" alt="Hexafume" width="240" height="80"
+      <img src="{{ asset('images/hexafume/hexafume-white.png') }}" id="preloader-img" alt="Malfaur" width="240" height="80"
         style="width:240px;height:80px;max-width:240px;max-height:80px;object-fit:contain;display:block;filter:brightness(1.1);"
         onerror="this.style.display='none';document.getElementById('preloader-fallback').style.display='block'"/>
       <div class="preloader-logo" id="preloader-fallback" style="display:none;">HEXA<span>FUME</span></div>

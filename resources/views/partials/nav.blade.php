@@ -1,7 +1,7 @@
 <!-- NAV -->
 <nav id="navbar">
   <a href="{{ route('home') }}" class="nav-logo">
-    <img src="{{ asset('images/hexafume/hexafume-white.png') }}" alt="Hexafume" width="280" height="93" style="width:280px;height:93px;max-width:280px;max-height:93px;object-fit:contain;object-position:left center;display:block;filter:brightness(1.1);" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+    <img src="{{ asset('images/hexafume/hexafume-white.png') }}" alt="Malfaur" width="280" height="93" style="width:280px;height:93px;max-width:280px;max-height:93px;object-fit:contain;object-position:left center;display:block;filter:brightness(1.1);" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
     <div class="nav-logo-icon" style="display:none;">H</div>
   </a>
   <ul class="nav-links">

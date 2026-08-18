@@ -1,8 +1,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>@yield('title', 'Hexafume — Think Big | IT Services & Digital Solutions')</title>
-<meta name="description" content="@yield('meta_description', 'Hexafume - Pioneering digital excellence through Agentic AI, high-performance SaaS platforms, and custom software development.')">
-<meta name="keywords" content="@yield('meta_keywords', 'Agentic AI, SaaS Development, Software Company, AI Automation, Web Development Islamabad, Custom Software Solutions, Hexafume')">
+<title>@yield('title', 'Malfaur — Think Big | IT Services & Digital Solutions')</title>
+<meta name="description" content="@yield('meta_description', 'Malfaur - Pioneering digital excellence through Agentic AI, high-performance SaaS platforms, and custom software development.')">
+<meta name="keywords" content="@yield('meta_keywords', 'Agentic AI, SaaS Development, Software Company, AI Automation, Web Development Islamabad, Custom Software Solutions, Malfaur')">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{{ url()->current() }}">
 
@@ -11,14 +11,14 @@
 <link rel="apple-touch-icon" href="{{ asset('images/hexafume/hexafume-white.png') }}">
 
 <!-- Social Media (Open Graph & Twitter) -->
-<meta property="og:site_name" content="Hexafume">
+<meta property="og:site_name" content="Malfaur">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ url()->current() }}">
-<meta property="og:title" content="@yield('title', 'Hexafume — Think Big | IT Services & Digital Solutions')">
+<meta property="og:title" content="@yield('title', 'Malfaur — Think Big | IT Services & Digital Solutions')">
 <meta property="og:description" content="@yield('meta_description', 'Pioneering digital excellence through Agentic AI, SaaS, and custom software development.')">
 <meta property="og:image" content="{{ asset('images/hexafume/hexafume-original.png') }}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="@yield('title', 'Hexafume — Think Big | IT Services & Digital Solutions')">
+<meta name="twitter:title" content="@yield('title', 'Malfaur — Think Big | IT Services & Digital Solutions')">
 <meta name="twitter:description" content="@yield('meta_description', 'Pioneering digital excellence through Agentic AI, SaaS, and custom software development.')">
 <meta name="twitter:image" content="{{ asset('images/hexafume/hexafume-original.png') }}">
 

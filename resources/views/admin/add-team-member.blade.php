@@ -235,7 +235,7 @@
           <div class="form-row">
             <div class="form-group">
               <label>Email Address <span class="required">*</span></label>
-              <input type="email" id="email" name="email" placeholder="e.g. info@hexafume.com"/>
+              <input type="email" id="email" name="email" placeholder="e.g. info@malfaur.com"/>
             </div>
             <div class="form-group">
               <label>LinkedIn Profile URL</label>
@@ -281,7 +281,7 @@
           <div class="form-row single">
             <div class="form-group">
               <label>Meta Title <span class="required">*</span></label>
-              <input type="text" id="metaTitle" name="meta_title" placeholder="e.g. Zaid ul Hassan — CEO at Hexafume" oninput="countChars(this,'metaTitleCounter',60)"/>
+              <input type="text" id="metaTitle" name="meta_title" placeholder="e.g. Zaid ul Hassan — CEO at Malfaur" oninput="countChars(this,'metaTitleCounter',60)"/>
               <div class="char-counter" id="metaTitleCounter">0 / 60</div>
             </div>
           </div>
@@ -297,11 +297,11 @@
           <div class="form-row">
             <div class="form-group">
               <label>Meta Keywords</label>
-              <input type="text" id="metaKeywords" name="meta_keywords" placeholder="e.g. CEO, product strategy, Hexafume"/>
+              <input type="text" id="metaKeywords" name="meta_keywords" placeholder="e.g. CEO, product strategy, Malfaur"/>
             </div>
             <div class="form-group">
               <label>Canonical URL</label>
-              <input type="url" id="canonicalUrl" name="canonical_url" placeholder="https://hexafume.com/team/zaid-ul-hassan"/>
+              <input type="url" id="canonicalUrl" name="canonical_url" placeholder="https://malfaur.com/team/zaid-ul-hassan"/>
             </div>
           </div>
 

@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @php
   $memberPageName = $selectedMemberPayload['name'] ?? 'Team Member';
-  $memberPageTitle = $selectedMemberPayload['title'] ?? 'Hexafume Team';
-  $memberPageBio = $selectedMemberPayload['bio'] ?? 'Team member profile at Hexafume.';
+  $memberPageTitle = $selectedMemberPayload['title'] ?? 'Malfaur Team';
+  $memberPageBio = $selectedMemberPayload['bio'] ?? 'Team member profile at Malfaur.';
 @endphp
 
-@section('title', $memberPageName . ' — Hexafume')
+@section('title', $memberPageName . ' — Malfaur')
 @section('meta_description', \Illuminate\Support\Str::limit($memberPageBio, 155))
 
 @push('page_styles')
@@ -21,7 +21,7 @@
       <div class="preloader-ring-progress" id="ringProgress"></div>
     </div>
     <div class="preloader-logo-center">
-      <img src="{{ asset('images/hexafume/hexafume-white.png') }}" id="preloader-img" alt="Hexafume" width="240" height="80"
+      <img src="{{ asset('images/hexafume/hexafume-white.png') }}" id="preloader-img" alt="Malfaur" width="240" height="80"
         style="width:240px;height:80px;max-width:240px;max-height:80px;object-fit:contain;display:block;filter:brightness(1.1);"
         onerror="this.style.display='none';document.getElementById('preloader-fallback').style.display='block'"/>
       <div class="preloader-logo" id="preloader-fallback" style="display:none;">HEXA<span>FUME</span></div>
