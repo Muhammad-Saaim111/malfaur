@@ -32,9 +32,9 @@
 
   $serviceImages = [
       asset('images/services/web_dev.png'), // Web
-      asset('images/services/mobile_app.png'), // Mobile
+      asset('images/services/mobile_app.png?v=2'), // Mobile
       asset('images/services/ai_automation.png'), // AI
-      asset('images/services/software_dev.png'), // Software
+      asset('images/services/software_dev_new.jpg'), // Software
       asset('images/services/blockchain_dev.png'), // Blockchain
       asset('images/services/ui_ux_dev.png'), // UI/UX
       asset('images/services/marketing_dev.png'), // Marketing
