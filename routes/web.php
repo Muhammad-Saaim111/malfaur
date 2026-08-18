@@ -1,0 +1,125 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EmailController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AdminAuthController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\TeamMemberController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\Admin\SystemToolsController;
+use App\Http\Controllers\Admin\TestimonialController;
+
+/*
+|--------------------------------------------------------------------------
+| Hexafume Home
+|--------------------------------------------------------------------------
+*/
+Route::get("/", [ProjectController::class, "homePage"])->name("home");
+
+Route::get("/about", [ProjectController::class, "aboutPage"])->name("about");
+
+Route::get("/services", [ProjectController::class, "servicesPage"])->name("services");
+
+Route::get("/process", [ProjectController::class, "processPage"])->name("process");
+
+Route::get("/work", [ProjectController::class, "index"])->name("work");
+
+Route::get("/team", [TeamMemberController::class, "teamPage"])->name("team");
+
+Route::get("/team-member/{slug?}", [TeamMemberController::class, "memberPage"])->name("team-member");
+
+Route::get("/contact", [ProjectController::class, "contactPage"])->name("contact");
+
+Route::get("/project/{slug}", [ProjectController::class, "show"])->name("project-detail");
+
+/*
+|--------------------------------------------------------------------------
+| Admin Dashboard
+|--------------------------------------------------------------------------
+*/
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::middleware('guest')->group(function () {
+        Route::get('/login', [AdminAuthController::class, 'showLogin'])->name('login');
+        Route::post('/login', [AdminAuthController::class, 'login'])->name('login.submit');
+        Route::get('/forgot-password', [AdminAuthController::class, 'showForgotPassword'])->name('password.request');
+        Route::post('/forgot-password', [AdminAuthController::class, 'sendResetLink'])->name('password.email');
+        Route::get('/reset-password/{token}', [AdminAuthController::class, 'showResetPassword'])->name('password.reset');
+        Route::post('/reset-password', [AdminAuthController::class, 'resetPassword'])->name('password.update');
+    });
+
+    Route::middleware('auth')->group(function () {
+        Route::get('/', [ProjectController::class, 'adminDashboard'])->name('dashboard');
+        Route::post('/logout', [AdminAuthController::class, 'logout'])->name('logout');
+
+        Route::get('/projects', [ProjectController::class, 'adminIndex'])->name('projects.index');
+        Route::get('/projects/create', [ProjectController::class, 'adminCreate'])->name('projects.create');
+        Route::get('/projects/{project}/edit', [ProjectController::class, 'adminEdit'])->name('projects.edit');
+        Route::post('/projects', [ProjectController::class, 'store'])->name('projects.store');
+        Route::put('/projects/{project}', [ProjectController::class, 'update'])->name('projects.update');
+        Route::delete('/projects/{project}', [ProjectController::class, 'destroy'])->name('projects.destroy');
+
+        Route::get('/team-members/create', [TeamMemberController::class, 'create'])->name('team-members.create');
+        Route::get('/team-members/{teamMember}/edit', [TeamMemberController::class, 'edit'])->name('team-members.edit');
+        Route::get('/team', [TeamMemberController::class, 'index'])->name('team.index');
+        Route::post('/team', [TeamMemberController::class, 'store'])->name('team.store');
+        Route::put('/team/{teamMember}', [TeamMemberController::class, 'update'])->name('team.update');
+        Route::delete('/team/{teamMember}', [TeamMemberController::class, 'destroy'])->name('team.destroy');
+
+        Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials.index');
+        Route::get('/testimonials/create', [TestimonialController::class, 'create'])->name('testimonials.create');
+        Route::get('/testimonials/{testimonial}/edit', [TestimonialController::class, 'edit'])->name('testimonials.edit');
+        Route::post('/testimonials', [TestimonialController::class, 'store'])->name('testimonials.store');
+        Route::put('/testimonials/{testimonial}', [TestimonialController::class, 'update'])->name('testimonials.update');
+        Route::delete('/testimonials/{testimonial}', [TestimonialController::class, 'destroy'])->name('testimonials.destroy');
+
+        Route::get('/messages', [EmailController::class, 'adminIndex'])->name('messages.index');
+        Route::get('/messages/{email}', [EmailController::class, 'adminShow'])->name('messages.show');
+        Route::post('/messages/{email}/reply', [EmailController::class, 'adminReply'])->name('messages.reply');
+        Route::delete('/messages/{email}', [EmailController::class, 'adminDestroy'])->name('messages.destroy');
+
+        Route::get('/pages', [PageController::class, 'index'])->name('pages.index');
+        Route::get('/pages/{slug}/edit', [PageController::class, 'edit'])->name('pages.edit');
+        Route::match(['PUT', 'POST'], '/pages/{slug}', [PageController::class, 'update'])->name('pages.update');
+
+        Route::get('/tools', [SystemToolsController::class, 'index'])->name('tools.index');
+        Route::post('/tools/run', [SystemToolsController::class, 'run'])->name('tools.run');
+    });
+});
+
+
+/*
+|--------------------------------------------------------------------------
+| Contact Form (Hexafume frontend → backend email send)
+|--------------------------------------------------------------------------
+*/
+Route::post("/contact", [ContactController::class, "send"])->name(
+    "contact.send",
+);
+
+/*
+|--------------------------------------------------------------------------
+| Email Management Routes
+|--------------------------------------------------------------------------
+*/
+Route::get("/email/compose", [EmailController::class, "compose"])->name(
+    "email.compose",
+);
+Route::post("/email/send", [EmailController::class, "send"])->name(
+    "email.send",
+);
+Route::get("/email/inbox", [EmailController::class, "index"])->name(
+    "email.index",
+);
+Route::get("/email/{email}", [EmailController::class, "show"])->name(
+    "email.show",
+);
+Route::delete("/email/{email}", [EmailController::class, "destroy"])->name(
+    "email.destroy",
+);
+
+/*
+|--------------------------------------------------------------------------
+| Project Management
+|--------------------------------------------------------------------------
+*/
