@@ -29,6 +29,17 @@
   $features = $page->getSectionContent('features_strip');
   $techHeader = $page->getSectionContent('tech_header');
   $cta = $page->getSectionContent('cta');
+
+  $serviceImages = [
+      asset('images/services/web_dev.png'), // Web
+      asset('images/services/mobile_app.png'), // Mobile
+      asset('images/services/ai_automation.png'), // AI
+      asset('images/services/software_dev.png'), // Software
+      asset('images/services/blockchain_dev.png'), // Blockchain
+      asset('images/services/ui_ux_dev.png'), // UI/UX
+      asset('images/services/marketing_dev.png'), // Marketing
+      asset('images/services/devops_dev.png'), // DevOps
+  ];
 @endphp
 
 <!-- HERO -->
@@ -37,9 +48,9 @@
   <div class="hero-orb"></div>
   <div class="page-hero-inner">
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ route('home') }}">Home</a><span class="breadcrumb-sep">›</span><span>Services</span></nav>
-    <div class="section-badge" style="animation:fadeUp .7s .15s ease both;"><span class="dot"></span>{{ $hero['badge'] ?? 'What We Do' }}</div>
-    <h1>{!! $hero['title'] ?? 'Our Services <span class="grad">Era</span>' !!}</h1>
-    <p class="hero-sub">{{ $hero['subtitle'] ?? 'Comprehensive digital solutions engineered to propel your business into the future.' }}</p>
+    <div class="section-badge" style="animation:fadeUp .7s .15s ease both;"><span class="dot"></span>WHAT WE DO</div>
+    <h1>Our Services</h1>
+    <p class="hero-sub">Specialist cyber resilience advisory services for banks, financial institutions and critical infrastructure organisations.</p>
     <div class="hero-tags">
       @if(isset($hero['tags']))
         @foreach($hero['tags'] as $tag)
@@ -57,25 +68,20 @@
     <h2 class="section-title">{!! $practices['title'] ?? 'Everything You Need to <span class="grad">Scale</span>' !!}</h2>
     <p>{{ $practices['desc'] ?? 'Eight practice areas. One unified team. Engineered for speed, quality, and long-term impact.' }}</p>
   </div>
-  <div class="service-featured" id="serviceList">
+  <div class="services-list-new" id="serviceList">
     @foreach($services as $i => $s)
-      <div class="svc-big-card reveal" style="transition-delay: {{ $i * 60 }}ms;">
-        <div class="svc-big-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">{!! $s->icon !!}</svg></div>
-        <div class="svc-big-body">
-          <h3>{{ $s->name }}</h3>
-          <p>{{ $s->description }}</p>
-          <div class="svc-tags">
-            @foreach($s->features as $t)
-              <span class="svc-tag">{{ $t }}</span>
-            @endforeach
-          </div>
+      <div class="services-row-item {{ $i % 2 == 1 ? 'row-reverse' : '' }} reveal" style="transition-delay: {{ $i * 60 }}ms;">
+        <div class="service-row-img-wrap">
+          <img src="{{ $serviceImages[$i] ?? 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80' }}" alt="{{ $s->name }}" loading="lazy" class="service-row-img">
         </div>
-        <div class="svc-big-cta">
-          <a href="{{ route('contact') }}" class="svc-arrow" aria-label="Get started with {{ $s->name }}">
-            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        <div class="service-row-content">
+          <div class="service-row-num">SERVICE {{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }}</div>
+          <h3 class="service-row-title">{{ $s->name }}</h3>
+          <p class="service-row-desc">{{ $s->description }}</p>
+          <a href="{{ route('contact') }}?service={{ urlencode($s->name) }}" class="service-row-btn">
+            View Service <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
-        <span class="svc-big-num">{{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }}</span>
       </div>
     @endforeach
   </div>

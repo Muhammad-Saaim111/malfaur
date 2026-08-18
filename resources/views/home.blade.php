@@ -217,22 +217,34 @@
       <h2 class="section-title" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:500;font-size:clamp(2rem,3.5vw,3rem);line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem;">{!! $servicesHeader['title'] ?? 'Our Software Development <span class="grad">Services</span>' !!}</h2>
       <p class="section-sub">{{ $servicesHeader['subtitle'] ?? 'We provide end-to-end software development services including AI solutions, SaaS development, web applications, mobile apps, cloud infrastructure, and digital transformation solutions.' }}</p>
     </div>
+    @php
+      $serviceImages = [
+          asset('images/services/web_dev.png'), // Web
+          asset('images/services/mobile_app.png'), // Mobile
+          asset('images/services/ai_automation.png'), // AI
+          asset('images/services/software_dev.png'), // Software
+          asset('images/services/blockchain_dev.png'), // Blockchain (copied image)
+          asset('images/services/ui_ux_dev.png'), // UI/UX (copied image)
+          asset('images/services/marketing_dev.png'), // Marketing (copied image)
+          asset('images/services/devops_dev.png'), // DevOps (copied image)
+      ];
+    @endphp
     <div class="services-grid" id="servicesGrid">
       @foreach($services as $i => $s)
-        <div class="service-card reveal" style="transition-delay: {{ ($i % 4) * 80 }}ms;">
-          <div class="svc-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              {!! $s->icon !!}
-            </svg>
+        <div class="service-card reveal" style="transition-delay: {{ ($i % 3) * 80 }}ms;">
+          <div class="service-card-img">
+            <img src="{{ $serviceImages[$i] ?? 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80' }}" alt="{{ $s->name }}" loading="lazy">
           </div>
-          <h3>{{ $s->name }}</h3>
-          <p>{{ $s->description }}</p>
-          <div class="svc-tags">
-            @foreach($s->features as $t)
-              <span class="svc-tag">{{ $t }}</span>
-            @endforeach
+          <div class="service-card-body">
+            <h3>{{ $s->name }}</h3>
+            <p>{{ $s->description }}</p>
+            <div class="svc-tags">
+              @foreach($s->features as $t)
+                <span class="svc-tag">{{ $t }}</span>
+              @endforeach
+            </div>
+            <a href="{{ route('services') }}" class="svc-link">Learn More →</a>
           </div>
-          <a href="{{ route('services') }}" class="svc-link">Learn More →</a>
         </div>
       @endforeach
     </div>
