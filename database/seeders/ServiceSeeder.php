@@ -66,6 +66,13 @@ class ServiceSeeder extends Seeder
                 'icon' => '<path d="M2 8h20"/><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="16" cy="12" r="1"/>',
                 'features' => ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform'],
             ],
+            [
+                'slug' => 'cyber-resilience-strategy',
+                'name' => 'Cyber Security',
+                'description' => 'Anticipate, withstand, respond to, and recover from cyber disruptions. We help banks, financial institutions, and critical infrastructure organizations design robust cyber strategies and manage enterprise-level risks.',
+                'icon' => '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+                'features' => ['Cyber Resilience', 'Governance & Risk', 'Maturity Assessment', 'Regulatory Readiness', 'Threat Management'],
+            ],
         ];
 
         foreach ($services as $index => $item) {

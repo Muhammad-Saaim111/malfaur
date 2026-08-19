@@ -35,10 +35,11 @@
       asset('images/services/mobile_app.png?v=2'), // Mobile
       asset('images/services/ai_automation.png'), // AI
       asset('images/services/software_dev_new.jpg'), // Software
-      asset('images/services/blockchain_dev.png'), // Blockchain
-      asset('images/services/ui_ux_dev.png'), // UI/UX
-      asset('images/services/marketing_dev.png'), // Marketing
-      asset('images/services/devops_dev.png'), // DevOps
+      asset('images/services/blockchain_dev.png?v=3'), // Blockchain
+      asset('images/services/ui_ux_dev.png?v=3'), // UI/UX
+      asset('images/services/marketing_dev.png?v=3'), // Marketing
+      asset('images/services/devops_dev.png?v=3'), // DevOps
+      asset('images/services/cyber_security.png?v=3'), // Cyber Resilience
   ];
 @endphp
 

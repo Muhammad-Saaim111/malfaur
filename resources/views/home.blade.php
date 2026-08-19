@@ -223,10 +223,11 @@
           asset('images/services/mobile_app.png?v=2'), // Mobile
           asset('images/services/ai_automation.png'), // AI
           asset('images/services/software_dev_new.jpg'), // Software
-          asset('images/services/blockchain_dev.png'), // Blockchain (copied image)
-          asset('images/services/ui_ux_dev.png'), // UI/UX (copied image)
-          asset('images/services/marketing_dev.png'), // Marketing (copied image)
-          asset('images/services/devops_dev.png'), // DevOps (copied image)
+          asset('images/services/blockchain_dev.png?v=3'), // Blockchain (copied image)
+          asset('images/services/ui_ux_dev.png?v=3'), // UI/UX (copied image)
+          asset('images/services/marketing_dev.png?v=3'), // Marketing (copied image)
+          asset('images/services/devops_dev.png?v=3'), // DevOps (copied image)
+          asset('images/services/cyber_security.png?v=3'), // Cyber Resilience
       ];
     @endphp
     <div class="services-grid" id="servicesGrid">
