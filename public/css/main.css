@@ -1915,7 +1915,7 @@ footer {
 
 .footer-brand p {
   font-size: .82rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.75;
   max-width: 240px;
   margin-top: .8rem;
@@ -1928,7 +1928,7 @@ footer {
   letter-spacing: .14em;
   text-transform: uppercase;
   margin-bottom: 1.2rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-col ul {
@@ -1941,7 +1941,7 @@ footer {
 
 .footer-col a {
   font-size: .82rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   transition: color .2s;
 }
@@ -1957,7 +1957,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: .75rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
   background: #030306;
 }
 

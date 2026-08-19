@@ -279,45 +279,6 @@
   </ol>
 </section>
 
-<!-- PORTFOLIO -->
-<section id="portfolio">
-  <div class="portfolio-inner">
-    <div class="portfolio-head reveal">
-      <span class="section-badge"><span class="dot"></span>{{ $portfolioHeader['badge'] ?? 'Case Studies' }}</span>
-      <h2 class="section-title" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:500;font-size:clamp(2rem,3.5vw,3rem);line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem;">{!! $portfolioHeader['title'] ?? 'Featured <span class="grad">Projects</span>' !!}</h2>
-      <p class="section-sub">{{ $portfolioHeader['subtitle'] ?? 'Explore our portfolio of transformative digital experiences' }}</p>
-    </div>
-    <div class="portfolio-grid" id="portfolioGrid">
-      @forelse($featuredProjects as $i => $p)
-        <div class="portfolio-card reveal" style="transition-delay: {{ $i * 100 }}ms;">
-          <div class="port-thumb" style="position:relative;overflow:hidden;background:var(--surface2);">
-            @if($p->hero_image_url)
-              <img src="{{ $p->hero_image_url }}" alt="Project Showcase: {{ $p->name }} - {{ $p->type }}" width="1200" height="800" style="position:absolute;inset:0;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:cover;object-position:top;display:block;opacity:0.4;" loading="lazy">
-            @endif
-            @if($p->logo_image_url)
-              <img src="{{ $p->logo_image_url }}" alt="{{ $p->name }} Logo" width="120" height="120" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:120px;height:120px;max-width:120px;max-height:120px;object-fit:contain;display:block;z-index:2;filter:drop-shadow(0 10px 20px rgba(0,0,0,0.5));">
-            @endif
-            <span class="port-cat">{{ $p->type }}</span>
-          </div>
-          <div class="port-body">
-            <h3>{{ $p->name }}</h3>
-            <p>{{ Str::words($p->overview_p1, 20, '...') }}</p>
-            <p class="port-dates">
-              <strong>{{ $p->start_date ? $p->start_date->format('M Y') : '' }}</strong> — 
-              <strong>{{ $p->finish_date ? $p->finish_date->format('M Y') : 'Present' }}</strong>
-            </p>
-            <a href="{{ route('project-detail', $p->url_slug) }}" class="port-link">Visit Site →</a>
-          </div>
-        </div>
-      @empty
-        <div style="grid-column: 1/-1; text-align:center; padding: 4rem; color:var(--w40);">
-          No featured projects yet. Check back soon.
-        </div>
-      @endforelse
-    </div>
-  </div>
-</section>
-
 <!-- TESTIMONIALS -->
 <section id="testimonials" style="padding:3.5rem 4rem;max-width:1300px;margin:0 auto;">
   <div class="testi-head reveal">
@@ -398,15 +359,15 @@
         <div class="contact-items">
           <div class="c-item">
             <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <div><h4>{{ $contactHeader['address_label'] ?? 'Our Office' }}</h4><p>{{ $contactHeader['address'] ?? 'DHA 1, Islamabad, Pakistan' }}</p></div>
+            <div><h4>{{ $contactHeader['address_label'] ?? 'Our Office' }}</h4><p>{{ $contactHeader['address'] ?? '16, Chestnut Drive, Stretton Hall, Oadby, Leicester LE2 4QX' }}</p></div>
           </div>
           <div class="c-item">
             <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-            <div><h4>{{ $contactHeader['email_label'] ?? 'Email Us' }}</h4><a href="mailto:{{ $contactHeader['email'] ?? 'info@malfaur.com' }}">{{ $contactHeader['email'] ?? 'info@malfaur.com' }}</a></div>
+            <div><h4>{{ $contactHeader['email_label'] ?? 'Email Us' }}</h4><a href="mailto:{{ $contactHeader['email'] ?? 'contact@malfaur.co.uk' }}">{{ $contactHeader['email'] ?? 'contact@malfaur.co.uk' }}</a></div>
           </div>
           <div class="c-item">
             <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
-            <div><h4>{{ $contactHeader['phone_label'] ?? 'Call Us 24/7' }}</h4><a href="tel:{{ str_replace(' ', '', $contactHeader['phone'] ?? '+923449121053') }}">{{ $contactHeader['phone'] ?? '+92 344 9121053' }}</a></div>
+            <div><h4>{{ $contactHeader['phone_label'] ?? 'Call Us 24/7' }}</h4><a href="tel:{{ str_replace(' ', '', $contactHeader['phone'] ?? '01163180653') }}">{{ $contactHeader['phone'] ?? '0116 3180 653' }}</a></div>
           </div>
         </div>
       </div>

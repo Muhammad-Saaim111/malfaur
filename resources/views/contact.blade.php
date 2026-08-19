@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', "Contact — Malfaur | Let's Start a Conversation")
-@section('meta_description', "Get in touch with Malfaur. Tell us about your project and we'll get back to you within 24 hours. DHA 1, Islamabad — info@malfaur.com — +92 344 9121053")
+@section('meta_description', "Get in touch with Malfaur. Tell us about your project and we'll get back to you within 24 hours. 16, Chestnut Drive, Leicester — contact@malfaur.co.uk — 0116 3180 653")
 
 @push('page_styles')
     <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
@@ -144,14 +144,14 @@
   <div class="map-inner">
     <div class="map-head reveal">
       <div class="section-badge"><span class="dot"></span>{{ $mapHeader['badge'] ?? 'Find Us' }}</div>
-      <h2>{!! $mapHeader['title'] ?? 'We\'re Based in <span class="grad">Islamabad</span>' !!}</h2>
-      <p>{{ $mapHeader['subtitle'] ?? 'DHA Phase 1, Islamabad — serving clients across Pakistan and the globe.' }}</p>
+      <h2>{!! $mapHeader['title'] ?? 'We\'re Based in <span class="grad">Leicester</span>' !!}</h2>
+      <p>{{ $mapHeader['subtitle'] ?? '16, Chestnut Drive, Stretton Hall, Oadby, Leicester — serving clients across the UK and the globe.' }}</p>
     </div>
     <div class="map-frame reveal">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.6834!2d73.1492!3d33.5228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6789f1f7a7b4e3c!2sDHA%20Phase%201%2C%20Islamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Malfaur Office Location"></iframe>
+      <iframe src="https://maps.google.com/maps?q=16%20Chestnut%20Drive,%20Leicester%20LE2%204QX,%20UK&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Malfaur Office Location"></iframe>
       <div class="map-overlay-badge">
         <div class="mb-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <div><h4>Malfaur HQ</h4><p>DHA Phase 1, Islamabad, PK</p></div>
+        <div><h4>Malfaur HQ</h4><p>16, Chestnut Drive, Leicester, UK</p></div>
       </div>
     </div>
   </div>

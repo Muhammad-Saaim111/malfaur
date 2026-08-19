@@ -33,6 +33,10 @@ Route::get("/contact", [ProjectController::class, "contactPage"])->name("contact
 
 Route::get("/project/{slug}", [ProjectController::class, "show"])->name("project-detail");
 
+Route::view("/privacy-policy", "privacy-policy")->name("privacy-policy");
+Route::view("/terms-condition", "terms-condition")->name("terms-condition");
+Route::view("/modern-slavery", "modern-slavery")->name("modern-slavery");
+
 /*
 |--------------------------------------------------------------------------
 | Admin Dashboard
