@@ -10,7 +10,7 @@
 .tools-hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(77,77,255,.16), rgba(255,255,255,.03));
+  background: linear-gradient(135deg, rgba(56, 189, 248, .16), rgba(255,255,255,.03));
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 1.5rem;
@@ -21,7 +21,7 @@
   inset: auto -40px -60px auto;
   width: 180px;
   height: 180px;
-  background: radial-gradient(circle, rgba(77,77,255,.28), transparent 65%);
+  background: radial-gradient(circle, rgba(56, 189, 248, .28), transparent 65%);
   filter: blur(6px);
   pointer-events: none;
 }

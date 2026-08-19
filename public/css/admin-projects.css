@@ -63,7 +63,7 @@
 .proj-card-thumb .thumb-letter {
   font-family: var(--font-display);
   font-size: 3rem; font-weight: 800;
-  color: rgba(77,77,255,.15);
+  color: rgba(56, 189, 248,.15);
   line-height: 1;
 }
 .proj-card-thumb .status-pill {
@@ -73,7 +73,7 @@
 }
 .proj-card-thumb .status-pill.live { background: rgba(0,200,100,.15); color: var(--green); border: 1px solid rgba(0,200,100,.25); }
 .proj-card-thumb .status-pill.progress { background: rgba(255,170,0,.12); color: var(--amber); border: 1px solid rgba(255,170,0,.25); }
-.proj-card-thumb .status-pill.review { background: rgba(77,77,255,.12); color: var(--blue-b); border: 1px solid rgba(77,77,255,.25); }
+.proj-card-thumb .status-pill.review { background: rgba(56, 189, 248,.12); color: var(--blue-b); border: 1px solid rgba(56, 189, 248,.25); }
 .proj-card-body { padding: 1.2rem; }
 .proj-card-type { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--blue-b); font-weight: 600; margin-bottom: .4rem; }
 .proj-card-name { font-family: var(--font-display); font-size: 1rem; font-weight: 700; margin-bottom: .3rem; }

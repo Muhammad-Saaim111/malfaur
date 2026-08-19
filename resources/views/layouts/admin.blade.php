@@ -14,12 +14,12 @@
   --surface: #080810;
   --surface2: #0c0c18;
   --surface3: #101020;
-  --blue: #4d4dff;
+  --blue: #38bdf8;
   --blue-b: #6e6eff;
-  --blue-glow: rgba(77,77,255,0.22);
-  --blue-subtle: rgba(77,77,255,0.06);
+  --blue-glow: rgba(56, 189, 248, 0.22);
+  --blue-subtle: rgba(56, 189, 248, 0.06);
   --border: rgba(255,255,255,0.06);
-  --border-b: rgba(77,77,255,0.28);
+  --border-b: rgba(56, 189, 248, 0.28);
   --white: #ffffff;
   --w80: rgba(255,255,255,0.8);
   --w60: rgba(255,255,255,0.6);

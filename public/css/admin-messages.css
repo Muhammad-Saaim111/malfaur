@@ -61,7 +61,7 @@
   flex-shrink: 0;
 }
 .stat-icon svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.8; }
-.stat-icon.blue { background: rgba(77,77,255,.12); color: var(--blue-b); }
+.stat-icon.blue { background: rgba(56, 189, 248,.12); color: var(--blue-b); }
 .stat-icon.green { background: rgba(0,200,100,.12); color: var(--green); }
 .stat-icon.red { background: rgba(255,77,106,.12); color: var(--red); }
 .stat-icon.amber { background: rgba(255,170,0,.12); color: var(--amber); }
@@ -99,7 +99,7 @@
   font-family: var(--font-display); font-size: .8rem; font-weight: 800;
   color: #fff;
   flex-shrink: 0;
-  box-shadow: 0 3px 12px rgba(77,77,255,.25);
+  box-shadow: 0 3px 12px rgba(56, 189, 248,.25);
 }
 .msg-sender-info { flex: 1; min-width: 0; }
 .msg-sender-name {
@@ -117,7 +117,7 @@
   flex-shrink: 0;
 }
 .msg-status.sent { background: rgba(0,200,100,.15); color: var(--green); border: 1px solid rgba(0,200,100,.25); }
-.msg-status.received { background: rgba(77,77,255,.12); color: var(--blue-b); border: 1px solid rgba(77,77,255,.25); }
+.msg-status.received { background: rgba(56, 189, 248,.12); color: var(--blue-b); border: 1px solid rgba(56, 189, 248,.25); }
 .msg-status.failed { background: rgba(255,77,106,.12); color: var(--red); border: 1px solid rgba(255,77,106,.25); }
 
 .msg-subject {
@@ -154,7 +154,7 @@
   transition: all .2s;
 }
 .msg-action-btn svg { width: 13px; height: 13px; stroke: var(--w40); fill: none; stroke-width: 1.8; }
-.msg-action-btn.view:hover { border-color: var(--border-b); background: rgba(77,77,255,.1); }
+.msg-action-btn.view:hover { border-color: var(--border-b); background: rgba(56, 189, 248,.1); }
 .msg-action-btn.view:hover svg { stroke: var(--blue-b); }
 .msg-action-btn.delete:hover { border-color: rgba(255,77,106,.25); background: rgba(255,77,106,.08); }
 .msg-action-btn.delete:hover svg { stroke: var(--red); }
@@ -208,7 +208,7 @@
   padding: .18rem .6rem; border-radius: 100px; flex-shrink: 0;
 }
 .view-status.sent { background: rgba(0,200,100,.15); color: var(--green); border: 1px solid rgba(0,200,100,.25); }
-.view-status.received { background: rgba(77,77,255,.12); color: var(--blue-b); border: 1px solid rgba(77,77,255,.25); }
+.view-status.received { background: rgba(56, 189, 248,.12); color: var(--blue-b); border: 1px solid rgba(56, 189, 248,.25); }
 .view-status.failed { background: rgba(255,77,106,.12); color: var(--red); border: 1px solid rgba(255,77,106,.25); }
 
 .view-subject {

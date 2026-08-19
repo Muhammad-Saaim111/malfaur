@@ -44,7 +44,7 @@
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(77,77,255,.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248,.4), transparent);
   opacity: 0;
   transition: opacity .3s;
 }
@@ -174,7 +174,7 @@
 }
 .status-badge.live { background: rgba(0,200,100,.1); color: var(--green); border: 1px solid rgba(0,200,100,.2); }
 .status-badge.progress { background: rgba(255,170,0,.1); color: var(--amber); border: 1px solid rgba(255,170,0,.2); }
-.status-badge.review { background: rgba(77,77,255,.1); color: var(--blue-b); border: 1px solid rgba(77,77,255,.2); }
+.status-badge.review { background: rgba(56, 189, 248,.1); color: var(--blue-b); border: 1px solid rgba(56, 189, 248,.2); }
 .status-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
 .tbl-actions { display: flex; align-items: center; gap: .4rem; }
 .tbl-action-btn {
@@ -238,7 +238,7 @@
   transition: all .2s;
   cursor: pointer;
 }
-.quick-item:hover { background: rgba(77,77,255,.07); border-color: var(--border-b); color: var(--white); }
+.quick-item:hover { background: rgba(56, 189, 248,.07); border-color: var(--border-b); color: var(--white); }
 .quick-item svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.7; color: var(--blue-b); flex-shrink: 0; }
 .quick-item .arr { margin-left: auto; opacity: .4; }
 

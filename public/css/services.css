@@ -1,7 +1,7 @@
 /* ── SERVICES PAGE SECTIONS ── */
 .page-hero{min-height:72vh;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(180deg,#060610 0%,#050508 100%);}
-.hero-grid-bg{position:absolute;inset:0;z-index:1;background-image:linear-gradient(rgba(77,77,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(77,77,255,.05) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 80% 70% at 50% 40%,black,transparent);}
-.hero-orb{position:absolute;width:700px;height:700px;background:radial-gradient(circle,rgba(77,77,255,.15) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-60%);pointer-events:none;z-index:1;}
+.hero-grid-bg{position:absolute;inset:0;z-index:1;background-image:linear-gradient(rgba(56, 189, 248,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(56, 189, 248,.05) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 80% 70% at 50% 40%,black,transparent);}
+.hero-orb{position:absolute;width:700px;height:700px;background:radial-gradient(circle,rgba(56, 189, 248,.15) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-60%);pointer-events:none;z-index:1;}
 .page-hero-inner{position:relative;z-index:10;max-width:1300px;margin:0 auto;width:100%;padding:8rem 4rem 5rem;text-align:center;}
 .breadcrumb{display:inline-flex;align-items:center;gap:.6rem;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--w60);margin-bottom:2rem;animation:fadeUp .6s .1s ease both;}
 .breadcrumb a{color:var(--w60);text-decoration:none;transition:color .2s;}
@@ -149,7 +149,7 @@
 
 /* CTA */
 .services-cta{padding:6rem 4rem;text-align:center;position:relative;overflow:hidden;background:var(--deep);border-top:1px solid var(--border);}
-.cta-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(77,77,255,.18) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
+.cta-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(56, 189, 248,.18) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
 .services-cta-inner{position:relative;z-index:2;}
 .services-cta h2{font-size:clamp(2.2rem,4vw,3.5rem);font-weight:500;letter-spacing:-.02em;margin-bottom:1rem;}
 .services-cta h2 .grad{color:var(--blue-b);}

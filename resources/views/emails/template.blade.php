@@ -25,7 +25,7 @@
             border-radius: 12px 12px 0 0;
             padding: 36px 40px;
             text-align: center;
-            border-bottom: 3px solid #4d4dff;
+            border-bottom: 3px solid #38bdf8;
         }
 
         .header-logo {
@@ -37,7 +37,7 @@
             margin-bottom: 6px;
         }
 
-        .header-logo span { color: #6666ff; }
+        .header-logo span { color: #7dd3fc; }
 
         .header-tagline {
             font-size: 12px;
@@ -100,7 +100,7 @@
             margin-bottom: 6px;
         }
 
-        .footer .footer-brand span { color: #6666ff; }
+        .footer .footer-brand span { color: #7dd3fc; }
 
         .footer p {
             font-size: 12px;
@@ -109,7 +109,7 @@
         }
 
         .footer a {
-            color: #6666ff;
+            color: #7dd3fc;
             text-decoration: none;
         }
 
@@ -138,9 +138,9 @@
         <div class="signature">
             <strong>Malfaur Team</strong>
             DHA 1, Islamabad, Pakistan<br>
-            <a href="mailto:info@malfaur.com" style="color:#4d4dff;text-decoration:none;">info@malfaur.com</a>
+            <a href="mailto:info@malfaur.com" style="color:#38bdf8;text-decoration:none;">info@malfaur.com</a>
             &bull;
-            <a href="tel:+923449121053" style="color:#4d4dff;text-decoration:none;">+92 344 9121053</a>
+            <a href="tel:+923449121053" style="color:#38bdf8;text-decoration:none;">+92 344 9121053</a>
         </div>
     </div>
 

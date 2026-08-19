@@ -70,7 +70,7 @@
   flex-shrink: 0;
 }
 .stat-icon svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.8; }
-.stat-icon.blue { background: rgba(77,77,255,.12); color: var(--blue-b); }
+.stat-icon.blue { background: rgba(56, 189, 248,.12); color: var(--blue-b); }
 .stat-icon.green { background: rgba(0,200,100,.12); color: var(--green); }
 .stat-icon.amber { background: rgba(255,170,0,.12); color: var(--amber); }
 .stat-icon.purple { background: rgba(160,80,255,.12); color: #a050ff; }
@@ -98,7 +98,7 @@
 
 .member-card-header {
   height: 100px;
-  background: linear-gradient(135deg, rgba(77,77,255,.08) 0%, var(--surface2) 50%, rgba(160,80,255,.06) 100%);
+  background: linear-gradient(135deg, rgba(56, 189, 248,.08) 0%, var(--surface2) 50%, rgba(160,80,255,.06) 100%);
   position: relative;
   display: flex; align-items: center; justify-content: center;
 }
@@ -223,7 +223,7 @@
 }
 .social-link svg { width: 13px; height: 13px; stroke: var(--w40); fill: none; stroke-width: 1.8; }
 .social-link:hover { border-color: var(--border-b); transform: translateY(-1px); }
-.social-link.email:hover { background: rgba(77,77,255,.1); }
+.social-link.email:hover { background: rgba(56, 189, 248,.1); }
 .social-link.email:hover svg { stroke: var(--blue-b); }
 .social-link.linkedin:hover { background: rgba(10,102,194,.12); }
 .social-link.linkedin:hover svg { stroke: #0a66c2; }

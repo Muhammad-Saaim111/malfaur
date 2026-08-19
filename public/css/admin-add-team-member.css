@@ -125,7 +125,7 @@ textarea {
 input::placeholder, textarea::placeholder { color: var(--w20); }
 input:focus, select:focus, textarea:focus {
   border-color: var(--border-b);
-  box-shadow: 0 0 0 3px rgba(77,77,255,.08);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248,.08);
   background: #0e0e1e;
 }
 textarea { resize: vertical; min-height: 100px; line-height: 1.65; }
@@ -193,8 +193,8 @@ select option { background: #0c0c18; color: #fff; }
 .skill-levels-note {
   display: flex; align-items: flex-start; gap: .5rem;
   padding: .75rem 1rem;
-  background: rgba(77,77,255,.04);
-  border: 1px solid rgba(77,77,255,.12);
+  background: rgba(56, 189, 248,.04);
+  border: 1px solid rgba(56, 189, 248,.12);
   border-radius: 8px;
   font-size: .75rem; color: var(--w40); line-height: 1.6;
 }
@@ -233,7 +233,7 @@ select option { background: #0c0c18; color: #fff; }
 .add-item-btn {
   display: flex; align-items: center; justify-content: center; gap: .5rem;
   padding: .65rem; background: transparent;
-  border: 1px dashed rgba(77,77,255,.25);
+  border: 1px dashed rgba(56, 189, 248,.25);
   border-radius: 9px; color: var(--blue-b);
   font-size: .8rem; font-weight: 600;
   transition: all .2s; width: 100%; margin-top: .4rem;
@@ -244,7 +244,7 @@ select option { background: #0c0c18; color: #fff; }
 
 /* ── IMAGE UPLOAD ── */
 .image-upload-area {
-  border: 1.5px dashed rgba(77,77,255,.2);
+  border: 1.5px dashed rgba(56, 189, 248,.2);
   border-radius: 10px; padding: 2rem;
   text-align: center; cursor: pointer;
   transition: all .25s; position: relative;

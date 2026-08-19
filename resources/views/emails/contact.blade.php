@@ -26,7 +26,7 @@
             border-radius: 12px 12px 0 0;
             padding: 36px 40px;
             text-align: center;
-            border-bottom: 3px solid #4d4dff;
+            border-bottom: 3px solid #38bdf8;
         }
 
         .header-logo {
@@ -39,7 +39,7 @@
         }
 
         .header-logo span {
-            color: #6666ff;
+            color: #7dd3fc;
         }
 
         .header-tagline {
@@ -51,7 +51,7 @@
 
         /* ─── Alert Banner ─── */
         .alert-banner {
-            background: linear-gradient(135deg, #4d4dff 0%, #6b21a8 100%);
+            background: linear-gradient(135deg, #38bdf8 0%, #6b21a8 100%);
             padding: 18px 40px;
             text-align: center;
         }
@@ -126,7 +126,7 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            color: #4d4dff;
+            color: #38bdf8;
             display: flex;
             align-items: center;
         }
@@ -149,9 +149,9 @@
         /* ─── Service Badge ─── */
         .service-badge {
             display: inline-block;
-            background: linear-gradient(135deg, rgba(77,77,255,0.12), rgba(107,33,168,0.12));
-            border: 1px solid rgba(77,77,255,0.3);
-            color: #4d4dff;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(107,33,168,0.12));
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            color: #38bdf8;
             border-radius: 100px;
             padding: 4px 14px;
             font-size: 13px;
@@ -163,7 +163,7 @@
         .message-box {
             background: #f8f9ff;
             border: 1px solid #e5e7f0;
-            border-left: 4px solid #4d4dff;
+            border-left: 4px solid #38bdf8;
             border-radius: 0 10px 10px 0;
             padding: 20px 22px;
             margin-bottom: 28px;
@@ -184,7 +184,7 @@
 
         .cta-btn {
             display: inline-block;
-            background: linear-gradient(135deg, #4d4dff, #6b21a8);
+            background: linear-gradient(135deg, #38bdf8, #6b21a8);
             color: #ffffff !important;
             text-decoration: none;
             padding: 13px 32px;
@@ -225,7 +225,7 @@
         }
 
         .footer a {
-            color: #6666ff;
+            color: #7dd3fc;
             text-decoration: none;
         }
 
@@ -239,7 +239,7 @@
         }
 
         .footer .footer-brand span {
-            color: #6666ff;
+            color: #7dd3fc;
         }
 
         /* ─── Responsive (email clients) ─── */
@@ -291,7 +291,7 @@
             <div class="detail-row">
                 <div class="detail-label"><span class="icon">&#9993;</span> Email</div>
                 <div class="detail-value">
-                    <a href="mailto:{{ $senderEmail }}" style="color:#4d4dff;text-decoration:none;font-weight:600;">
+                    <a href="mailto:{{ $senderEmail }}" style="color:#38bdf8;text-decoration:none;font-weight:600;">
                         {{ $senderEmail }}
                     </a>
                 </div>
@@ -300,7 +300,7 @@
                 <div class="detail-label"><span class="icon">&#128222;</span> Phone</div>
                 <div class="detail-value">
                     @if($senderPhone)
-                        <a href="tel:{{ $senderPhone }}" style="color:#4d4dff;text-decoration:none;font-weight:600;">
+                        <a href="tel:{{ $senderPhone }}" style="color:#38bdf8;text-decoration:none;font-weight:600;">
                             {{ $senderPhone }}
                         </a>
                     @else
