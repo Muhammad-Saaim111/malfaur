@@ -110,7 +110,7 @@ function renderTeam() {
     card.innerHTML = `
       <div class="member-photo-wrap">
         ${m.photo
-          ? `<img src="${m.photo}" alt="${m.name}" loading="lazy" width="520" height="620" style="width:100%;height:100%;max-width:100%;max-height:100%;object-fit:cover;object-position:center top;display:block;">`
+          ? `<img src="${m.photo}" alt="${m.name}" loading="lazy" width="520" height="620" style="width:100%;height:100%;max-width:100%;max-height:100%;object-fit:cover;object-position:${(m.name === 'Usman Malik' || m.name === 'Shahzad Hamid') ? 'center 20%' : 'center top'};display:block;">`
           : `<div class="member-avatar-placeholder"><div class="avatar-initials">${m.initials}</div></div>`
         }
         <div class="member-dept-badge">${m.deptLabel}</div>
