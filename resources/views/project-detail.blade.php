@@ -20,7 +20,7 @@
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="{{ route('home') }}">Home</a>
       <span class="breadcrumb-sep">›</span>
-      <a href="{{ route('work') }}">Work</a>
+      {{-- <a href="{{ route('work') }}">Work</a> --}}
       <span class="breadcrumb-sep">›</span>
       <span>{{ $project->name }}</span>
     </nav>
@@ -237,10 +237,12 @@
       @endif
 
       <!-- Back Link -->
+      {{-- 
       <a href="{{ route('work') }}" class="back-btn">
         <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
         Back to Portfolio
-      </a>
+      </a> 
+      --}}
     </div>
   </aside>
 

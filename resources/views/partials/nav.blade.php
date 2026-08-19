@@ -9,7 +9,7 @@
     <li><a href="{{ route('about') }}">About</a></li>
     <li><a href="{{ route('services') }}">Services</a></li>
     <li><a href="{{ route('process') }}">Process</a></li>
-    <li><a href="{{ route('work') }}">Work</a></li>
+    {{-- <li><a href="{{ route('work') }}">Work</a></li> --}}
     <li><a href="{{ route('team') }}">Team</a></li>
     <li><a href="{{ route('contact') }}">Contact</a></li>
   </ul>
@@ -25,7 +25,7 @@
   <a href="{{ route('about') }}" onclick="closeMenu()">About</a>
   <a href="{{ route('services') }}" onclick="closeMenu()">Services</a>
   <a href="{{ route('process') }}" onclick="closeMenu()">Process</a>
-  <a href="{{ route('work') }}" onclick="closeMenu()">Work</a>
+  {{-- <a href="{{ route('work') }}" onclick="closeMenu()">Work</a> --}}
   <a href="{{ route('team') }}" onclick="closeMenu()">Team</a>
   <a href="{{ route('contact') }}" onclick="closeMenu()">Contact</a>
 </div>

@@ -23,7 +23,7 @@ Route::get("/services", [ProjectController::class, "servicesPage"])->name("servi
 
 Route::get("/process", [ProjectController::class, "processPage"])->name("process");
 
-Route::get("/work", [ProjectController::class, "index"])->name("work");
+// Route::get("/work", [ProjectController::class, "index"])->name("work");
 
 Route::get("/team", [TeamMemberController::class, "teamPage"])->name("team");
 

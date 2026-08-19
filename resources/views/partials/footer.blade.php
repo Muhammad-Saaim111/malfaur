@@ -24,7 +24,7 @@
       <li><a href="{{ route('about') }}">About Us</a></li>
       <li><a href="{{ route('process') }}">Our Process</a></li>
       <li><a href="#">Careers</a></li>
-      <li><a href="{{ route('work') }}">Case Studies</a></li>
+      {{-- <li><a href="{{ route('work') }}">Case Studies</a></li> --}}
       <li><a href="{{ route('contact') }}">Contact Us</a></li>
     </ul>
   </div>
