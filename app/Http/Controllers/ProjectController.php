@@ -127,7 +127,7 @@ class ProjectController extends Controller
                     'initials' => $member->initials ?: strtoupper(substr($member->name, 0, 2)),
                     'dept' => $member->dept_label ?: ucfirst((string) $member->dept),
                     'exp' => $member->exp,
-                    'photo' => $member->photo_path ? asset('storage/' . $member->photo_path) : null,
+                    'photo' => $member->photo_url,
                 ];
             })
             ->values();

@@ -60,4 +60,15 @@ class TeamMember extends Model
     {
         return $this->hasMany(TeamMemberAchievement::class)->orderBy('sort_order');
     }
+
+    public function getPhotoUrlAttribute(): string
+    {
+        if (!$this->photo_path) {
+            return '';
+        }
+        if (str_starts_with($this->photo_path, 'images/') || str_starts_with($this->photo_path, 'http')) {
+            return asset($this->photo_path);
+        }
+        return asset('storage/' . $this->photo_path);
+    }
 }
