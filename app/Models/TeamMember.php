@@ -69,6 +69,9 @@ class TeamMember extends Model
         if (str_starts_with($this->photo_path, 'images/') || str_starts_with($this->photo_path, 'http')) {
             return asset($this->photo_path);
         }
+        if (str_starts_with($this->photo_path, 'team/photos/')) {
+            return asset('images/' . $this->photo_path);
+        }
         return asset('storage/' . $this->photo_path);
     }
 }
