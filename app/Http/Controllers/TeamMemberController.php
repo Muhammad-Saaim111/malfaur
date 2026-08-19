@@ -17,6 +17,7 @@ class TeamMemberController extends Controller
     {
         $members = TeamMember::query()
             ->where('show_on_team', true)
+            ->orderByDesc('is_featured')
             ->orderBy('created_at')
             ->orderBy('id')
             ->get();
