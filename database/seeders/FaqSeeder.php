@@ -11,32 +11,32 @@ class FaqSeeder extends Seeder
     {
         $faqs = [
             [
-                'question' => 'How long does a typical project take?',
-                'answer' => 'It depends on scope. A landing page or MVP can launch in 2–4 weeks. A full SaaS product typically takes 8–16 weeks. We define a clear timeline during consultation and stick to it.',
+                'question' => 'What IT consulting services do you offer?',
+                'answer' => 'We offer comprehensive IT consulting, including cloud migrations (AWS/Azure), network design, cybersecurity audits, backup & disaster recovery solutions, and ongoing managed IT support.',
             ],
             [
-                'question' => 'Do you work with startups or just enterprises?',
-                'answer' => 'Both. We love working with early-stage startups building their first product, as well as established enterprises modernising legacy systems. Our process scales to fit any stage.',
+                'question' => 'How do you ensure the security of our network and data?',
+                'answer' => 'We implement a zero-trust security framework. This includes setting up enterprise firewalls (Cisco/Fortinet), multi-factor authentication (MFA), end-to-end data encryption, and regular vulnerability scanning to patch security flaws.',
             ],
             [
-                'question' => 'How much do your services cost?',
-                'answer' => 'Projects are priced based on complexity and scope. After your initial consultation, we provide a detailed quote. We offer fixed-price and time-and-materials models to suit different needs.',
+                'question' => 'Can you migrate our legacy servers to the cloud?',
+                'answer' => 'Yes, cloud migration is one of our core specialties. We plan and execute seamless transitions from on-premise physical servers to secure cloud environments like AWS and Azure, ensuring minimal downtime for your business.',
             ],
             [
-                'question' => 'Can I see progress during development?',
-                'answer' => 'Absolutely — this is a core part of how we work. You get weekly demo sessions, a real-time project dashboard, and a dedicated Slack channel for daily communication.',
+                'question' => 'What is your guaranteed uptime SLA?',
+                'answer' => 'We guarantee a 99.9% uptime SLA for all managed networks and cloud infrastructures. Our 24/7 monitoring systems (using SolarWinds and Datadog) alert us to any anomalies, allowing us to resolve issues proactively before they cause downtime.',
             ],
             [
-                'question' => 'What happens if requirements change mid-project?',
-                'answer' => 'We use an agile change request process. Minor changes are absorbed within the sprint; larger scope changes are documented, costed, and agreed upon before implementation — no surprises.',
+                'question' => 'Do you provide 24/7 technical support?',
+                'answer' => 'Yes, we offer round-the-clock proactive monitoring and technical helpdesk support. Depending on your Service Level Agreement (SLA), our support desk is available via Slack, Email, and Phone to resolve critical issues anytime.',
             ],
             [
-                'question' => 'Do you provide support after launch?',
-                'answer' => 'Yes. Every project includes 30 days of post-launch hypercare. We also offer monthly retainer packages for ongoing development, maintenance, monitoring, and growth support.',
+                'question' => 'How do you handle backup and disaster recovery?',
+                'answer' => 'We set up automated daily backups with redundant off-site storage. In the event of a system failure, our disaster recovery protocols ensure that your business services can be restored within minutes, minimizing data loss.',
             ],
             [
-                'question' => 'Who will I be working with?',
-                'answer' => 'You\'ll have a dedicated project manager as your single point of contact, supported by a senior engineer, designer, and QA specialist — all assigned to your project from day one.',
+                'question' => 'How do we get started with your IT consulting services?',
+                'answer' => 'We begin with a complimentary initial consultation to audit your current IT infrastructure. From there, we provide a detailed strategic roadmap and hardware/software recommendations tailored to your goals.',
             ],
         ];
 

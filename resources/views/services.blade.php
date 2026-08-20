@@ -18,7 +18,7 @@
       <img src="{{ asset('images/hexafume/hexafume-white.png') }}" id="preloader-img" alt="Malfaur"
         style="height:80px;width:auto;filter:brightness(1.1);"
         onerror="this.style.display='none';document.getElementById('preloader-fallback').style.display='block'"/>
-      <div class="preloader-logo" id="preloader-fallback" style="display:none;">HEXA<span>FUME</span></div>
+      <div class="preloader-logo" id="preloader-fallback" style="display:none;">MAL<span>FAUR</span></div>
     </div>
   </div>
 </div>
@@ -50,8 +50,8 @@
   <div class="page-hero-inner">
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ route('home') }}">Home</a><span class="breadcrumb-sep">›</span><span>Services</span></nav>
     <div class="section-badge" style="animation:fadeUp .7s .15s ease both;"><span class="dot"></span>WHAT WE DO</div>
-    <h1>Our Services</h1>
-    <p class="hero-sub">Specialist cyber resilience advisory services for banks, financial institutions and critical infrastructure organisations.</p>
+    <h1>{!! $hero['title'] ?? 'Our Services' !!}</h1>
+    <p class="hero-sub">{{ $hero['subtitle'] ?? 'Comprehensive software engineering, intelligent systems design, agentic AI, and strategic technology consulting built for global scale.' }}</p>
     <div class="hero-tags">
       @if(isset($hero['tags']))
         @foreach($hero['tags'] as $tag)
@@ -96,9 +96,22 @@
     <p style="color:var(--w60);max-width:480px;margin:.8rem auto 0;font-size:.9rem;line-height:1.75;">{{ $techHeader['subtitle'] ?? 'We stay on the cutting edge — picking the right tool for the right job, always.' }}</p>
   </div>
   <div class="tech-categories">
-    @php $catDelay = 0; @endphp
+    @php 
+      $catDelay = 0; 
+      $glowClasses = [
+        'Frontend'         => 'glow-blue',
+        'Backend'          => 'glow-purple',
+        'Mobile'           => 'glow-cyan',
+        'AI & ML'          => 'glow-magenta',
+        'Database & Cloud' => 'glow-teal',
+        'DevOps & Infra'   => 'glow-violet'
+      ];
+    @endphp
     @foreach($technologies as $category => $techs)
-      <div class="tech-cat reveal" style="transition-delay: {{ ($catDelay++ % 3) * 0.08 }}s;">
+      @php
+        $glowClass = $glowClasses[trim($category)] ?? 'glow-blue';
+      @endphp
+      <div class="tech-cat {{ $glowClass }} reveal" style="transition-delay: {{ ($catDelay++ % 3) * 0.08 }}s;">
         <span class="tech-cat-label">{{ $category }}</span>
         <div class="tech-pills">
           @foreach($techs as $tech)

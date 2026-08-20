@@ -15,7 +15,7 @@
     <div class="preloader-ring-progress" id="ringProgress"></div>
     <div class="preloader-logo-center">
       <img src="{{ asset('images/hexafume/hexafume-white.png') }}" id="preloader-img" alt="Malfaur" width="240" height="80" style="width:240px;height:80px;max-width:240px;max-height:80px;object-fit:contain;display:block;filter:brightness(1.1);" onerror="this.style.display='none';document.getElementById('preloader-fallback').style.display='block'"/>
-      <div class="preloader-logo" id="preloader-fallback" style="display:none;">HEXA<span>FUME</span></div>
+      <div class="preloader-logo" id="preloader-fallback" style="display:none;">MAL<span>FAUR</span></div>
     </div>
   </div>
 </div>
@@ -122,7 +122,19 @@
     @if(isset($tools['items']))
       @foreach($tools['items'] as $i => $tool)
         <div class="tool-card reveal" style="transition-delay:{{ strval($i * 0.06) }}s;">
-          <span class="tool-emoji">{{ $tool['emoji'] }}</span>
+          <div class="tool-emoji">
+            @if(str_contains(strtolower($tool['title'] ?? ''), 'servicenow'))
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+            @elseif(str_contains(strtolower($tool['title'] ?? ''), 'cisco'))
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            @elseif(str_contains(strtolower($tool['title'] ?? ''), 'solarwinds'))
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            @elseif(str_contains(strtolower($tool['title'] ?? ''), 'aws'))
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 4 4 0 10-7.9 2A4 4 0 003 15z"/></svg>
+            @else
+              {{ $tool['emoji'] ?? '⚙️' }}
+            @endif
+          </div>
           <h4>{{ $tool['title'] }}</h4>
           <p>{{ $tool['desc'] }}</p>
         </div>

@@ -18,7 +18,7 @@
       <img src="{{ asset('images/hexafume/hexafume-white.png') }}" id="preloader-img" alt="Malfaur" width="240" height="80"
         style="width:240px;height:80px;max-width:240px;max-height:80px;object-fit:contain;display:block;filter:brightness(1.1);"
         onerror="this.style.display='none';document.getElementById('preloader-fallback').style.display='block'"/>
-      <div class="preloader-logo" id="preloader-fallback" style="display:none;">HEXA<span>FUME</span></div>
+      <div class="preloader-logo" id="preloader-fallback" style="display:none;">MAL<span>FAUR</span></div>
     </div>
   </div>
 </div>
@@ -104,15 +104,12 @@
           <label for="service">Service You're Interested In</label>
           <select id="service" name="service" required>
             <option value="" disabled selected>Select a Service</option>
-            <option>Web Design & Development</option>
-            <option>Mobile App Development</option>
-            <option>AI Integration & Automation</option>
-            <option>Software Development / SaaS</option>
-            <option>Blockchain & Web3</option>
-            <option>Graphic & UI/UX Design</option>
-            <option>Digital & Social Marketing</option>
-            <option>DevOps Solutions</option>
-            <option>Staff Augmentation</option>
+            <option>Cloud Migration & Consulting</option>
+            <option>Cybersecurity & Audits</option>
+            <option>Network Infrastructure & Topologies</option>
+            <option>Managed IT Support & SLA</option>
+            <option>Backup & Disaster Recovery</option>
+            <option>Server Provisioning & Administration</option>
             <option>Other / Not Sure Yet</option>
           </select>
         </div>
@@ -120,11 +117,11 @@
           <label for="budget">Estimated Budget</label>
           <select id="budget" name="budget">
             <option value="" disabled selected>Select a budget range</option>
-            <option>Under $5,000</option>
-            <option>$5,000 – $15,000</option>
-            <option>$15,000 – $50,000</option>
-            <option>$50,000 – $100,000</option>
-            <option>$100,000+</option>
+            <option>Under £5,000</option>
+            <option>£5,000 – £15,000</option>
+            <option>£15,000 – £50,000</option>
+            <option>£50,000 – £100,000</option>
+            <option>£100,000+</option>
             <option>Not sure yet</option>
           </select>
         </div>

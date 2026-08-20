@@ -20,13 +20,13 @@ class PageSeeder extends Seeder
         ]);
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $home->id, 'section_key' => 'hero'], ['sort_order' => 1, 'content' => [
-            'badge' => 'Pioneering Digital Excellence',
-            'title' => 'We Build Digital Futures That Matter.',
-            'subtitle' => 'We design and deploy agentic AI, high-performance SaaS platforms, and automation systems that turn ideas into scalable, revenue-generating products.',
+            'badge' => 'Intelligent IT Solutions',
+            'title' => 'We Engineer <br/><span class="grad">Intelligent Systems</span><br/>For Global Scale.',
+            'subtitle' => 'Malfaur partners with enterprise clients and fast-growing startups to design, build, and deploy agentic AI, robust SaaS platforms, and enterprise-grade software solutions.',
             'stats' => [
-                ['num' => '300', 'label' => 'Projects Delivered'],
-                ['num' => '35', 'label' => 'Expert Engineers'],
-                ['num' => '20', 'label' => 'Countries Served'],
+                ['num' => '150', 'label' => 'Solutions Architected'],
+                ['num' => '40', 'label' => 'Technical Experts'],
+                ['num' => '15', 'label' => 'Core Verticals'],
             ]
         ]]);
 
@@ -100,8 +100,8 @@ class PageSeeder extends Seeder
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $about->id, 'section_key' => 'hero'], ['sort_order' => 1, 'content' => [
             'badge' => 'Who We Are',
-            'title' => 'We Build <span class="grad">Digital Futures</span> That Matter',
-            'subtitle' => 'Hexafume is a next-generation digital agency pioneered by excellence and innovation.',
+            'title' => 'Engineering <span class="grad">Custom Software Solutions</span> for Global Scale',
+            'subtitle' => 'Malfaur is a custom software development partner engineering tailored applications, agentic AI solutions, high-performance SaaS, and web platforms for startups and enterprise clients worldwide.',
             'stats' => [
                 ['num' => '300', 'label' => 'Projects Delivered'],
                 ['num' => '35', 'label' => 'Expert Engineers'],
@@ -114,56 +114,57 @@ class PageSeeder extends Seeder
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $about->id, 'section_key' => 'story'], ['sort_order' => 2, 'content' => [
             'badge' => 'Our Story',
-            'title' => 'From a Bold <span class="grad">Vision</span> to Global Impact',
-            'p1' => "Hexafume was born out of frustration. We saw businesses with brilliant ideas trapped by outdated technology, slow agencies, and digital strategies that just didn't work.",
-            'p2' => "Founded in 2022, we set out to build a company that thinks like a startup, executes like an enterprise, and cares like a partner.",
+            'title' => 'From A <span class="grad">Daring Idea</span> to Global Footprint',
+            'p1' => 'Malfaur was established with a singular mission: empowering organizations to convert breakthrough concepts into high-yielding digital systems. Our dedicated engineers focus on delivering tailored software solutions grounded in performance, security, and sustainable collaboration.',
+            'p2' => 'Since our inception in 2022, we have operated on a core philosophy: combining startup agility, enterprise capability, and deep client-centered dedication.',
             'journey_badge' => 'Our Journey',
             'btn_text' => 'Meet the Team',
             'timeline' => [
-                ['year' => '2024', 'title' => 'Founded in Islamabad', 'desc' => 'Launched with a mission to make world-class technology accessible.'],
-                ['year' => '2025', 'title' => 'First 50 Projects Shipped', 'desc' => 'Expanded to 20 engineers and earning trust.'],
-                ['year' => '2026', 'title' => 'AI Division Launched', 'desc' => 'Dedicated Agentic AI research team formed.'],
+                ['year' => '2024', 'title' => 'Founded in Leicester', 'desc' => 'Launched with a vision to deliver world-class software development services.'],
+                ['year' => '2025', 'title' => 'First 50 Projects Shipped', 'desc' => 'Successfully completed over 50 software development projects for clients across multiple industries.'],
+                ['year' => '2026', 'title' => 'AI Division Launched', 'desc' => 'Expanded AI development capabilities and launched a dedicated AI research and automation division.'],
             ]
         ]]);
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $about->id, 'section_key' => 'mission_vision'], ['sort_order' => 3, 'content' => [
             'badge' => 'Our Foundation',
-            'title' => 'Mission, Vision & Values',
-            'subtitle' => 'The principles that guide every decision, every build, and every client relationship.',
-            'mission_title' => 'Our Mission',
-            'mission_text' => 'To democratise access to world-class digital technology — empowering every business to lead in the digital age.',
-            'vision_title' => 'Our Vision',
-            'vision_text' => 'To become the most trusted technology partner for growth-stage companies worldwide.',
+            'title' => 'Purpose, Direction & <span class="grad">Principles</span>',
+            'subtitle' => 'The commitments and convictions that shape the way we work, collaborate, and deliver value to every client.',
+            'mission_title' => 'Why We Exist',
+            'mission_text' => 'We exist to eliminate the gap between business ambition and technical execution. Malfaur partners with forward-thinking organizations to engineer software that is fast, reliable, and built to outlast market shifts.',
+            'vision_title' => 'Where We Are Headed',
+            'vision_text' => 'To be recognised as the engineering partner of choice for high-growth businesses — known not just for what we build, but for how deeply we care about outcomes.',
             'values' => [
-                ['emoji' => '🔥', 'title' => 'Relentless Quality', 'text' => "We don't ship average work."],
-                ['emoji' => '🤝', 'title' => 'True Partnership', 'text' => "Your success is our success."],
+                ['emoji' => '🔥', 'title' => 'Uncompromising Quality',  'text' => 'Average is not in our vocabulary. Every deliverable must exceed the standard we set the day before.'],
+                ['emoji' => '🤝', 'title' => 'Genuine Partnership',     'text' => 'We treat every client engagement as a shared endeavour — your wins are celebrations we take personally.'],
+                ['emoji' => '💡', 'title' => 'Curiosity-Driven Growth', 'text' => 'We stay ahead by constantly exploring new tools, frameworks, and approaches that push the boundaries of what is possible.'],
             ]
         ]]);
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $about->id, 'section_key' => 'team_teaser'], ['sort_order' => 4, 'content' => [
-            'badge' => 'The People',
-            'title' => 'Brilliant Minds, <span class="grad">One Team</span>',
-            'subtitle' => 'We are engineers, designers, strategists, and researchers united by a shared obsession: building things that actually work — beautifully, reliably, and at scale.',
+            'badge' => 'The IT Core Team',
+            'title' => 'Tech Specialists, <span class="grad">Unified Purpose</span>',
+            'subtitle' => 'Malfaur brings together seasoned IT consultants, systems administrators, and tech support specialists driven by a singular standard: delivering IT solutions that scale seamlessly and solve complex challenges.',
             'highlights' => [
-                'active team members',
-                'core disciplines represented',
-                'Built from live team data',
-                'Updated as members are added',
+                'Enterprise IT solutions active',
+                'IT infrastructure domains mapped',
+                'Vetted IT professionals',
+                'Dynamically updated tech roster',
             ],
-            'btn_text' => 'Meet the Full Team'
+            'btn_text' => 'Meet the IT Team'
         ]]);
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $about->id, 'section_key' => 'pillars'], ['sort_order' => 5, 'content' => [
-            'badge' => 'Why Hexafume',
-            'title' => 'What Makes Us <span class="grad">Different</span>',
-            'desc' => 'The six pillars that define how we work and why clients keep coming back.',
+            'badge' => 'Why Malfaur',
+            'title' => 'What Sets Us <span class="grad">Apart</span>',
+            'desc'  => 'Six defining attributes that make Malfaur the engineering partner businesses return to, project after project.',
             'items' => [
-                ['title' => 'AI-First Thinking', 'desc' => 'Every solution we design is evaluated through an AI lens.', 'icon' => 'brain'],
-                ['title' => 'Enterprise-Grade Security', 'desc' => 'From SOC 2 alignment to penetration testing.', 'icon' => 'shield'],
-                ['title' => 'Agile Delivery', 'desc' => 'Two-week sprints, weekly demos, daily standups.', 'icon' => 'refresh'],
-                ['title' => 'Dedicated Expert Teams', 'desc' => 'No junior developers hidden in projects.', 'icon' => 'users'],
-                ['title' => 'Scalability by Design', 'desc' => 'We architect for tomorrow, not just today.', 'icon' => 'trending-up'],
-                ['title' => 'Lifetime Support', 'desc' => 'Our relationship doesn\'t end at launch.', 'icon' => 'message-square'],
+                ['title' => 'Intelligence-Led Engineering',  'desc' => 'We bake AI reasoning into every stage of development — from architecture review to automated QA pipelines.',       'icon' => 'brain'],
+                ['title' => 'Security from Day One',         'desc' => 'Data protection, role-based access control, and threat modelling are built into the foundation — never bolted on.', 'icon' => 'shield'],
+                ['title' => 'Rapid Iterative Delivery',      'desc' => 'Short release cycles, transparent progress dashboards, and structured demos keep you in full control at all times.','icon' => 'refresh'],
+                ['title' => 'Senior-Only Delivery Teams',    'desc' => 'Every Malfaur project is staffed exclusively with senior engineers — your codebase is never a training exercise.',   'icon' => 'users'],
+                ['title' => 'Architecture Built to Grow',    'desc' => 'We design systems to handle your next milestone before you reach it — scalability is a default, not an upgrade.',   'icon' => 'trending-up'],
+                ['title' => 'Long-Term Engineering Support', 'desc' => 'Post-launch, we remain hands-on — monitoring performance, shipping patches, and evolving your product with you.',    'icon' => 'message-square'],
             ]
         ]]);
 
@@ -184,8 +185,8 @@ class PageSeeder extends Seeder
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $services->id, 'section_key' => 'hero'], ['sort_order' => 1, 'content' => [
             'badge' => 'What We Do',
-            'title' => 'Our Services <span class="grad">Era</span>',
-            'subtitle' => 'Comprehensive digital solutions engineered to propel your business into the future.',
+            'title' => 'Our <span class="grad">Services</span>',
+            'subtitle' => 'Comprehensive software engineering, intelligent systems design, agentic AI, and strategic technology consulting built for global scale.',
             'tags' => ['Agentic AI', 'SaaS Development', 'Web & Mobile Apps', 'UI/UX Design', 'Blockchain', 'DevOps', 'Digital Marketing']
         ]]);
 
@@ -208,8 +209,8 @@ class PageSeeder extends Seeder
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $services->id, 'section_key' => 'tech_header'], ['sort_order' => 4, 'content' => [
             'badge' => 'Our Stack',
-            'title' => 'Technologies We <span class="grad">Master</span>',
-            'subtitle' => 'We stay on the cutting edge — picking the right tool for the right job, always.'
+            'title' => 'The Technologies We <span class="grad">Leverage</span>',
+            'subtitle' => 'We align modern frameworks and robust infrastructures with your exact business objectives to build high-performance systems.'
         ]]);
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $services->id, 'section_key' => 'cta'], ['sort_order' => 5, 'content' => [
@@ -226,44 +227,44 @@ class PageSeeder extends Seeder
         ]);
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $process->id, 'section_key' => 'hero'], ['sort_order' => 1, 'content' => [
-            'badge' => 'How We Work',
-            'title' => 'Our Standard <span class="grad">Work Process</span>',
-            'subtitle' => 'A proven methodology refined across 300+ projects — combining strategy, agile execution, and relentless quality control.',
+            'badge' => 'IT Delivery Process',
+            'title' => 'Our IT Implementation <span class="grad">Lifecycle</span>',
+            'subtitle' => 'A structured, collaborative approach designed to take your business from strategic planning to enterprise-grade IT infrastructure.',
             'stats' => [
-                ['num' => '5', 'label' => 'Clear Steps'],
-                ['num' => '98%', 'label' => 'On-Time Delivery'],
-                ['num' => '300+', 'label' => 'Projects Delivered'],
-                ['num' => '100%', 'label' => 'Transparency'],
+                ['num' => '5', 'label' => 'Structured Phases'],
+                ['num' => '24/7', 'label' => 'Proactive Monitoring'],
+                ['num' => '99.9%', 'label' => 'Uptime SLA'],
+                ['num' => '100%', 'label' => 'Data Protection'],
             ]
         ]]);
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $process->id, 'section_key' => 'methodology_header'], ['sort_order' => 2, 'content' => [
             'badge' => 'The Methodology',
-            'title' => 'Five Steps to <span class="grad">Exceptional</span>',
-            'desc' => 'Every engagement — regardless of size or complexity — follows this battle-tested framework.',
+            'title' => 'Five Steps to <span class="grad">Exceptional IT</span>',
+            'desc' => 'Every engagement — regardless of size or complexity — follows this battle-tested infrastructure framework.',
         ]]);
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $process->id, 'section_key' => 'phases'], ['sort_order' => 3, 'content' => [
             'badge' => 'Inside Each Phase',
             'title' => 'What Happens <span class="grad">Behind the Scenes</span>',
-            'desc' => 'The rigorous sub-processes that make every step work.',
+            'desc' => 'The rigorous sub-processes that make every IT deployment work.',
             'items' => [
-                ['title' => 'Discovery & Scoping', 'desc' => 'Stakeholder interviews, market research, and technical feasibility studies.', 'badge' => 'Weeks 1-2'],
-                ['title' => 'Design & Prototyping', 'desc' => 'User flows, wireframes, and high-fidelity interactive prototypes.', 'badge' => 'Weeks 2-4'],
-                ['title' => 'Agile Development', 'desc' => 'Two-week sprints with daily standups and weekly build reviews.', 'badge' => 'Ongoing'],
-                ['title' => 'QA & Stress Testing', 'desc' => 'Automated testing and manual bug hunting in staging environments.', 'badge' => 'Pre-Launch'],
+                ['title' => 'IT Assessment & Planning', 'desc' => 'Stakeholder interviews, risk assessments, and technical feasibility studies.', 'badge' => 'Weeks 1-2'],
+                ['title' => 'Network Architecture Design', 'desc' => 'Network topologies, hardware selection, and security frameworks.', 'badge' => 'Weeks 2-4'],
+                ['title' => 'System Integration & Deployment', 'desc' => 'Server provisioning, cloud migrations, and software integrations.', 'badge' => 'Weeks 5-8'],
+                ['title' => 'Compliance & Performance Audits', 'desc' => 'Automated stress testing, vulnerability scans, and ISO/GDPR compliance checks.', 'badge' => 'Pre-Launch'],
             ]
         ]]);
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $process->id, 'section_key' => 'tools'], ['sort_order' => 4, 'content' => [
             'badge' => 'Our Toolkit',
-            'title' => 'Tools That Power <span class="grad">Every Project</span>',
-            'desc' => 'Industry-leading tools, tailored workflows, and practices refined across hundreds of builds.',
+            'title' => 'Tools That Power <span class="grad">Every Integration</span>',
+            'desc' => 'Industry-leading tools, tailored workflows, and practices refined across hundreds of enterprise networks.',
             'items' => [
-                ['emoji' => '📋', 'title' => 'Jira / Linear', 'desc' => 'Sprint planning and backlog management.'],
-                ['emoji' => '🎨', 'title' => 'Figma', 'desc' => 'Collaborative design systems.'],
-                ['emoji' => '🔀', 'title' => 'GitHub', 'desc' => 'Version control and CI/CD.'],
-                ['emoji' => '☁️', 'title' => 'AWS / GCP', 'desc' => 'Scalable cloud hosting.'],
+                ['emoji' => '📋', 'title' => 'ServiceNow / Jira', 'desc' => 'IT Service Management & Ticketing.'],
+                ['emoji' => '🌐', 'title' => 'Cisco / Fortinet', 'desc' => 'Enterprise Networking & Firewalls.'],
+                ['emoji' => '📊', 'title' => 'SolarWinds / Datadog', 'desc' => 'Infrastructure & Performance Monitoring.'],
+                ['emoji' => '☁️', 'title' => 'AWS / Azure', 'desc' => 'Scalable Cloud Enterprise Hosting.'],
             ]
         ]]);
 
@@ -334,27 +335,27 @@ class PageSeeder extends Seeder
         ]);
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $team->id, 'section_key' => 'hero'], ['sort_order' => 1, 'content' => [
-            'badge' => 'The Specialists',
-            'title' => 'The Minds Behind<br>the <span class="grad">Magic</span>',
-            'subtitle' => 'We are a team of engineers, designers, strategists, and dreamers united by one mission — turning bold ideas into scalable digital realities.'
+            'badge' => 'The IT Specialists',
+            'title' => 'The Minds Behind<br>the <span class="grad">IT Solutions</span>',
+            'subtitle' => 'We are a team of IT consultants, network architects, and support specialists united by one mission — turning complex technical challenges into seamless enterprise realities.'
         ]]);
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $team->id, 'section_key' => 'culture'], ['sort_order' => 2, 'content' => [
-            'badge' => 'Our Culture',
-            'title' => 'Built on <span class="grad">Principles</span>',
-            'desc' => 'The values that guide how we work, build, and grow — together.',
+            'badge' => 'Our Principles',
+            'title' => 'Built on <span class="grad">Standards</span>',
+            'desc' => 'The core values that guide how we audit, deploy, and secure your systems — every single day.',
             'items' => [
-                ['title' => 'Move With Speed', 'desc' => 'We ship fast, iterate faster. Velocity is a discipline — not recklessness.'],
-                ['title' => 'Craft With Integrity', 'desc' => 'Every line of code, every pixel matters. We take pride in the details others skip.'],
-                ['title' => 'Grow Together', 'desc' => 'No siloes. Every team member\'s growth is a shared victory we celebrate loudly.'],
-                ['title' => 'Think in Systems', 'desc' => 'We solve root causes, not symptoms. Great architecture is our obsession.'],
+                ['title' => 'Proactive Support', 'desc' => 'We monitor systems 24/7, resolving network anomalies before they cause business downtime.'],
+                ['title' => 'Uncompromising Security', 'desc' => 'Zero-trust architecture is our default. We lock down your endpoints and secure your data.'],
+                ['title' => 'Constant Innovation', 'desc' => 'We stay ahead of the technology curve, integrating modern cloud tools and automation.'],
+                ['title' => 'Infrastructure First', 'desc' => 'We build resilient foundations. Solid, scalable networks are our obsession.'],
             ]
         ]]);
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $team->id, 'section_key' => 'cta'], ['sort_order' => 3, 'content' => [
             'badge' => 'Hiring',
             'title' => 'Want to Join the <span class="grad">Team?</span>',
-            'subtitle' => 'We\'re always looking for brilliant people who want to build things that matter. If that sounds like you, let\'s talk.',
+            'subtitle' => 'We\'re always looking for brilliant IT professionals to join our consulting and support teams. If that sounds like you, let\'s talk.',
             'btn1_text' => 'Apply Now',
             'btn2_text' => 'Send Us a Message'
         ]]);
