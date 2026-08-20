@@ -247,18 +247,18 @@
   letter-spacing: .08em;
   text-transform: uppercase;
   margin-top: 1rem;
-  background: rgba(56, 189, 248, 0.06);
-  border: 1px solid rgba(56, 189, 248, 0.2);
-  color: var(--blue-b);
-  padding: 0.3rem 0.75rem;
+  background: var(--blue-subtle);
+  border: 1px solid var(--border-b);
+  color: var(--blue);
+  padding: 0.35rem 0.85rem;
   border-radius: 100px;
 }
 .office-status .sdot{
   width:6px;
   height:6px;
   border-radius:50%;
-  background: var(--blue-b);
-  box-shadow: 0 0 8px var(--blue-b);
+  background: var(--blue);
+  box-shadow: 0 0 8px var(--blue);
   animation: pulse 2s infinite;
 }
 
