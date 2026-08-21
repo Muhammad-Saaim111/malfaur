@@ -176,8 +176,8 @@
     <h2 style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-weight:500;font-size:clamp(2rem,3.5vw,3rem);line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem;">
       {!! $aboutSection['title'] ?? 'Transforming Ideas Into <span class="grad">Digital Reality</span>' !!}
     </h2>
-    <p class="about-text" style="margin-left:auto; margin-right:auto;">{{ $aboutSection['desc_p1'] ?? "Malfaur is a software development company helping businesses build scalable digital products. Our team of engineers, designers, and technology experts creates custom software, AI solutions, SaaS platforms, and enterprise applications that solve real business challenges." }}</p>
-    <p class="about-text" style="margin-left:auto; margin-right:auto;">{{ $aboutSection['desc_p2'] ?? "" }}</p>
+    <p class="about-text" style="margin-left:auto; margin-right:auto;">{{ $aboutSection['desc_p1'] ?? '' }}</p>
+    <p class="about-text" style="margin-left:auto; margin-right:auto;">{{ $aboutSection['desc_p2'] ?? '' }}</p>
     <a href="{{ route('about') }}" class="btn-p" style="display:inline-flex; margin-top: 1.5rem;">{{ $aboutSection['btn_text'] ?? 'About Us' }}</a>
   </div>
   

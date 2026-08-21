@@ -36,13 +36,13 @@ class PageSeeder extends Seeder
 
         \App\Models\PageSection::updateOrCreate(['page_id' => $home->id, 'section_key' => 'about'], ['sort_order' => 3, 'content' => [
             'badge' => 'Who We Are',
-            'title' => 'A Software Development Partner for Digital Transformation',
-            'desc_p1' => "Hexafume is a software development company helping businesses build scalable digital products. Our team of engineers, designers, and technology experts creates custom software, AI solutions, SaaS platforms, and enterprise applications that solve real business challenges.",
+            'title' => 'An Elite IT Engineering Partner for Global Enterprises',
+            'desc_p1' => "Malfaur Engineering is a premier IT consulting and engineering firm helping businesses scale through robust technology infrastructure. Our team of experts specializes in enterprise network architectures, cybersecurity frameworks, managed IT support, and cutting-edge automation solutions that drive real business transformation.",
             'desc_p2' => "",
             'pillars' => [
-                ['title' => 'Innovation', 'desc' => 'Cutting Edge Tech', 'icon' => '🚀'],
-                ['title' => 'Performance', 'desc' => 'Optimized Solutions', 'icon' => '⚡'],
-                ['title' => 'Security', 'desc' => 'Enterprise Grade', 'icon' => '🔒'],
+                ['title' => 'AI Engineering', 'desc' => 'Intelligent Automation', 'icon' => '🚀'],
+                ['title' => 'Cybersecurity', 'desc' => 'Zero-Trust Architecture', 'icon' => '🔒'],
+                ['title' => 'Scalability', 'desc' => 'High-Performance Systems', 'icon' => '⚡'],
                 ['title' => 'Global Reach', 'desc' => '20+ Countries', 'icon' => '🌍'],
             ],
             'btn_text' => 'About Us'
