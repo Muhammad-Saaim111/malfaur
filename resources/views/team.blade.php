@@ -4,7 +4,7 @@
 @section('meta_description', 'Meet the brilliant minds at Malfaur — a team of engineers, designers, and strategists building the future of digital experiences.')
 
 @push('page_styles')
-    <link rel="stylesheet" href="{{ asset('css/team.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/team.css') }}?v={{ filemtime(public_path('css/team.css')) }}">
 @endpush
 
 @section('content')

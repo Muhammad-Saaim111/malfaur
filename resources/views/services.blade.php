@@ -4,7 +4,7 @@
 @section('meta_description', "Malfaur's full suite of digital services — Agentic AI, SaaS Development, Web & Mobile Apps, UI/UX Design, Blockchain, DevOps, and Digital Marketing.")
 
 @push('page_styles')
-    <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/services.css') }}?v={{ filemtime(public_path('css/services.css')) }}">
 @endpush
 
 @section('content')

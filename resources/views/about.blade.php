@@ -4,7 +4,7 @@
 @section('meta_description', 'Learn about Malfaur — our story, mission, values, and the team driving digital transformation across AI, SaaS, and custom software development since 2022.')
 
 @push('page_styles')
-    <link rel="stylesheet" href="{{ asset('css/about.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/about.css') }}?v={{ filemtime(public_path('css/about.css')) }}">
 @endpush
 
 @section('content')

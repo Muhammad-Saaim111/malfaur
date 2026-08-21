@@ -4,7 +4,7 @@
 @section('meta_description', "Discover Malfaur's proven 5-step methodology for delivering exceptional digital products — from strategy and consultation through development, delivery, and ongoing support.")
 
 @push('page_styles')
-    <link rel="stylesheet" href="{{ asset('css/process.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/process.css') }}?v={{ filemtime(public_path('css/process.css')) }}">
 @endpush
 
 @section('content')
